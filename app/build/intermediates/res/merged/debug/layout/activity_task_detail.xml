@@ -1,0 +1,481 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f0eff4"
+    >
+
+    <RelativeLayout
+        android:id="@+id/task_detail_rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/title"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <ImageView
+            android:id="@+id/task_detail_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="24dp"
+            android:src="@drawable/selector_btn_back"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/task_detail_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/task_detail"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/task_detail_operation_card"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_btn_blue"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="24dp"
+            android:paddingRight="10dp"
+            android:text="@string/operation_card"
+            android:textColor="@color/white"
+            android:textSize="14sp" />
+    </RelativeLayout>
+
+    <!--<ImageView-->
+        <!--android:id="@+id/task_detail_iv_read_card"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_below="@+id/task_detail_rl1"-->
+        <!--android:layout_centerHorizontal="true"-->
+        <!--android:background="@color/white"-->
+        <!--android:clickable="true"-->
+        <!--android:contentDescription="@null"-->
+        <!--android:src="@drawable/selector_btn_read_card" />-->
+
+
+    <RelativeLayout
+        android:id="@+id/rr_time"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/scrollview"
+        >
+        <ImageView
+            android:id="@+id/task_detail_iv_read_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:background="@color/white"
+            android:clickable="true"
+            android:layout_marginTop="15dp"
+            android:contentDescription="@null"
+            android:src="@drawable/selector_btn_read_card" />
+
+        <TextView
+            android:id="@+id/task_detail_tv_created_time"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@+id/task_detail_iv_read_card"
+            android:textColor="@color/black"
+            android:textSize="12sp" />
+
+        <RelativeLayout
+            android:id="@+id/rr_progress"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/task_detail_tv_created_time">
+
+            <TextView
+                android:id="@+id/tv_complete_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="13sp"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/task_detail_tv_end_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_complete_time"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="4dp"
+                android:textColor="@color/blue"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_zhedie"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/task_detail_rl1"
+
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+        <RelativeLayout
+            android:id="@+id/rl_zhedie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/task_detail_tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:textSize="16sp" />
+            <ImageView
+                android:id="@+id/taskdetailhmore"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/xiangxia" />
+
+            <ImageView
+                android:id="@+id/taskdetailhmore1"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:src="@drawable/xiangshang"
+                android:visibility="gone" />
+        </RelativeLayout>
+    </LinearLayout>
+
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_below="@+id/ll_zhedie"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="11dp"
+        android:layout_alignParentStart="true">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical"
+            >
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#f0eff4" />-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                >
+
+                <TextView
+                    android:id="@+id/tips_riskTips"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:text="工作要求："
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/riskTips"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/tips_riskTips"
+                    android:background="@null"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"/>
+            </RelativeLayout>
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#f0eff4" />-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                >
+
+                <TextView
+                    android:id="@+id/tips_controlTips"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:text="控制措施与风险提示："
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/controlTips"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/tips_controlTips"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#f0eff4" />-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                >
+
+                <TextView
+                    android:id="@+id/tips_memo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:text="备注："
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/memo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="8dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@id/tips_memo"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#f0eff4" />-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                >
+
+                <TextView
+                    android:id="@+id/tips_charger"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:text="负责人："
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/charger"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/tips_charger"
+                    android:background="@null"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#f0eff4" />-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                >
+
+                <TextView
+                    android:id="@+id/tips_partner"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:text="配合人："
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/partner"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/tips_partner"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#f0eff4" />-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                >
+
+                <TextView
+                    android:id="@+id/tips_vehicleNumber"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:text="车牌号："
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/vehicleNumber"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/tips_vehicleNumber"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#f0eff4" />-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                >
+
+                <TextView
+                    android:id="@+id/tips_vehicleDriverName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:text="驾驶员姓名："
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/vehicleDriverName"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/tips_vehicleDriverName"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="1dp"-->
+                <!--android:background="#f0eff4" />-->
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                >
+
+                <TextView
+                    android:id="@+id/tips_vehicleDriverPhone"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:text="驾驶员电话："
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/vehicleDriverPhone"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_toRightOf="@+id/tips_vehicleDriverPhone"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

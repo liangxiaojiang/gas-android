@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tankuang" >
+
+        <TextView
+            android:id="@+id/tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="管线巡护提示"
+            android:textColor="@color/blue1"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5px"
+            android:layout_below="@+id/tips"
+            android:background="@color/blue1" />
+
+        <TextView
+            android:id="@+id/dialog_line_tips"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/line"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:padding="16dp"
+            android:text="确定开始巡检？"
+            android:textColor="@color/blue1"
+            android:textSize="18sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_line_tips"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:paddingBottom="20dp" >
+
+            <TextView
+                android:id="@+id/dialog_line_confirm"
+                android:layout_width="0dip"
+                android:layout_height="50dp"
+                android:layout_marginLeft="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_blue"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="确定"
+                android:textSize="16sp"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/dialog_line_cancel"
+                android:layout_width="0dip"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="30dp"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_blue"
+                android:clickable="true"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:text="取消"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+    
+
+</RelativeLayout>

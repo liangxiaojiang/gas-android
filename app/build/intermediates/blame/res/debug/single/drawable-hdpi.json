@@ -1,0 +1,74 @@
+[
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ems_ic_preference_single_normal.9.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-hdpi\\ems_ic_preference_single_normal.9.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\item_set_normal.9.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-hdpi\\item_set_normal.9.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\btn_arrow.9.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-hdpi\\btn_arrow.9.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\box.9.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-hdpi\\box.9.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\box_upload.9.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-hdpi\\box_upload.9.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\item_set_pressed.9.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-hdpi\\item_set_pressed.9.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\arrow.9.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-hdpi\\arrow.9.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\tankuang.9.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-hdpi\\tankuang.9.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\android_title_bg.9.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-hdpi\\android_title_bg.9.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\ems_ic_preference_single_pressed.9.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-hdpi\\ems_ic_preference_single_pressed.9.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\title.9.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-hdpi\\title.9.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\iconfont_input_top.9.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-hdpi\\iconfont_input_top.9.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\iconfont_input_bottom.9.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-hdpi\\iconfont_input_bottom.9.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\iconfont_login_shade.9.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-hdpi\\iconfont_login_shade.9.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\search_box.9.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-hdpi\\search_box.9.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\calendar_bg.9.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-hdpi\\calendar_bg.9.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\iconfont_bottom_bg.9.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-hdpi\\iconfont_bottom_bg.9.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi\\calendar_day_bg.9.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-hdpi\\calendar_day_bg.9.png"
+    }
+]

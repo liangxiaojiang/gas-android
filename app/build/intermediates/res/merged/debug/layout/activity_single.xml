@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/single_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/title">
+
+        <ImageView
+            android:id="@+id/single_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:padding="16dp"
+            android:src="@drawable/selector_btn_back"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/single_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="路单"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/single_rl"
+        >
+        <com.joe.oil.view.CommentListView
+            android:id="@+id/single_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/single_no_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="没有路单"
+        android:textColor="@color/gray"
+        android:textSize="18sp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

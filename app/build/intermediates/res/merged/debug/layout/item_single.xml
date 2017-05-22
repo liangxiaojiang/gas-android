@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rl_single_d"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:id="@+id/rl_sing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/singlenumber_ve"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="20dp"
+                android:gravity="left"
+                android:paddingTop="12dp"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/singlenumber_ve"
+                android:gravity="left"
+                android:paddingTop="12dp"
+                android:textSize="16sp"
+                 />
+
+            <TextView
+                android:id="@+id/singlenumber1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/name"
+                android:gravity="left"
+                android:paddingTop="12dp"
+                android:textSize="16sp"
+                 />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/single_taskname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl_sing">
+
+            <TextView
+                android:id="@+id/singleName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="20dp"
+                android:gravity="left"
+                android:paddingTop="5dp"
+                android:textSize="16sp" />
+
+
+
+        </RelativeLayout>
+        <!--<TextView-->
+        <!--android:id="@+id/singleName1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_marginLeft="12dp"-->
+        <!--android:layout_marginRight="20dp"-->
+        <!--android:gravity="left"-->
+        <!--android:paddingTop="12dp"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textStyle="bold" />-->
+        <!--<TextView-->
+        <!--android:id="@+id/singlenumber"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_toRightOf="@+id/singleName1"-->
+        <!--android:gravity="left"-->
+        <!--android:paddingTop="12dp"-->
+        <!--android:textSize="16sp"-->
+        <!--android:textStyle="bold"-->
+        <!--/>-->
+        <TextView
+            android:id="@+id/single_state"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/single_taskname"
+            android:layout_marginLeft="190dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:paddingTop="5dp"
+            android:textSize="16sp"
+            />
+
+        <TextView
+            android:id="@+id/item_single_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/single_state"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="40dp"
+            android:layout_marginTop="10dp"
+            android:gravity="left"
+            android:paddingBottom="5dp"
+            android:textColor="@color/qianhui"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/item_single_time1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/item_single_time"
+            android:layout_marginLeft="12dp"
+            android:layout_marginRight="40dp"
+            android:gravity="left"
+            android:paddingBottom="16dp"
+            android:textColor="@color/qianhui"
+            android:textSize="14sp" />
+
+        <ImageView
+            android:id="@+id/single_more"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:src="@drawable/btn_arrow" />
+    </RelativeLayout>
+</RelativeLayout>

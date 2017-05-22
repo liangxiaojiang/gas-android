@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tankuang"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="24dp" >
+
+        <TextView
+            android:id="@+id/dialog_second_read_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="12dp"
+            android:text="请选择作业完成情况"
+            android:textColor="@color/blue"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/dialog_second_read_spinner"
+            android:layout_width="200dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/dialog_second_read_title"
+            android:layout_centerHorizontal="true"
+            android:layout_weight="2"
+            android:background="@drawable/arrow" />
+
+        <EditText
+            android:id="@+id/dialog_second_read_reason"
+            android:layout_width="fill_parent"
+            android:layout_height="150dp"
+            android:layout_below="@+id/dialog_second_read_spinner"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/et_upload_message"
+            android:gravity="left|top"
+            android:hint="请输入未完成的原因(任务已完成可不填写此项)"
+            android:paddingLeft="8dp"
+            android:paddingTop="8dp"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/ll"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_second_read_reason"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/dialog_sencond_read_confirm"
+                android:layout_width="0dip"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/selector_btn_take_photo_cancel"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="确定"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

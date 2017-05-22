@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/title">
+
+
+        <TextView
+                android:id="@+id/checkitem_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="设备概况"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+    </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_gray"
+            android:layout_below="@+id/rl1"
+            android:paddingBottom="4dp" >
+
+            <RelativeLayout
+                android:id="@+id/rl_main_problem"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_check_area"
+                android:layout_marginTop="4dp"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp" >
+
+                <TextView
+                    android:id="@+id/tv_main_problem_bixuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@+id/tv_main_problem"
+                    android:gravity="center_vertical"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/tv_device_office"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@+id/tv_main_problem_bixuan"
+                    android:background="@null"
+                    android:gravity="left|top"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="4dp"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tv_main_problem"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="4dp"
+                    android:text="所属区域"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_check_area"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rl_hse_info"
+                android:layout_alignStart="@+id/rl_hse_info"
+                android:layout_below="@+id/rl_hse_info"
+                android:layout_marginTop="4dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingTop="4dp" >
+
+                <TextView
+                    android:id="@+id/tv_check_area"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="4dp"
+                    android:text="备注信息"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_check_area_bixuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/tv_check_area"
+                    android:gravity="center_vertical"
+                    android:text="*"
+                    android:textColor="@color/red" />
+                <TextView
+                    android:id="@+id/tv_device_memo"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@+id/tv_check_area_bixuan"
+                    android:background="@null"
+                    android:gravity="left|top"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="4dp"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_people_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/white"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp" >
+
+                <TextView
+                    android:id="@+id/tv_people_info"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="设备名称"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_info_bixuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/tv_people_info"
+                    android:gravity="center_vertical"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/tv_device_name"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@+id/tv_info_bixuan"
+                    android:background="@null"
+                    android:gravity="left|top"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="4dp"
+                    android:textSize="14sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_hse_info"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_people_info"
+                android:layout_marginTop="4dp"
+                android:background="@color/white" >
+
+                <TextView
+                    android:id="@+id/tv_problem_type"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="设备编号"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_problem_type_bixuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/tv_problem_type"
+                    android:gravity="center_vertical"
+                    android:text="*"
+                    android:textColor="@color/red" />
+                <TextView
+                    android:id="@+id/tv_device_code"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@+id/tv_problem_type_bixuan"
+                    android:background="@null"
+                    android:gravity="left|top"
+                    android:paddingBottom="4dp"
+                    android:paddingLeft="6dp"
+                    android:paddingTop="4dp"
+                    android:textSize="14sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

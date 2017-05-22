@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white">
+
+    <TextView
+            android:id="@+id/view_inspection_tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/current_should_inspection"
+            android:textColor="@color/blue1"
+            android:textSize="18sp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"/>
+
+    <TextView
+            android:id="@+id/view_inspection_should_inspection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大门口"
+            android:textColor="@color/blue1"
+            android:textSize="18sp"
+            android:layout_below="@+id/view_inspection_tv1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"/>
+
+    <ImageView
+            android:id="@+id/view_inspection_read_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/selector_btn_read_card"
+            android:layout_marginTop="170dp"
+            android:clickable="true"
+            android:layout_centerHorizontal="true"
+            android:contentDescription="@null"/>
+
+
+</RelativeLayout>

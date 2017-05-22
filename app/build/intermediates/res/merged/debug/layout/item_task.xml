@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/taskdetail"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:descendantFocusability="blocksDescendants">
+
+    <TextView
+        android:id="@+id/taskName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="20dp"
+        android:gravity="left"
+        android:paddingTop="12dp"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/item_task_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/taskName"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginTop="12dp"
+        android:gravity="left"
+        android:paddingBottom="16dp"
+        android:textColor="@color/qianhui"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/item_task_integral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/taskName"
+        android:layout_alignTop="@+id/item_task_time"
+        android:layout_toRightOf="@+id/item_task_time"
+        android:layout_marginRight="2dp"
+        android:gravity="left"
+        android:paddingBottom="16dp"
+        android:textColor="@color/qianhui"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/item_status"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignTop="@+id/item_task_time"
+        android:layout_marginRight="12dp"
+        android:layout_toRightOf="@+id/item_task_integral"
+        android:gravity="right"
+        android:paddingBottom="16dp"
+        android:textColor="@color/red"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/more"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/btn_arrow" />
+</RelativeLayout>

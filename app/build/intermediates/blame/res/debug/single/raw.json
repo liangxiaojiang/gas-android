@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\raw\\oil.db",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\raw\\oil.db"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\raw\\notify.wav",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\raw\\notify.wav"
+    }
+]

@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="400dp"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="330dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:id="@+id/tv_stop"
+                android:layout_width="330dp"
+                android:layout_height="65dp"
+                android:background="@drawable/a"></TextView>
+
+            <RelativeLayout
+                android:id="@+id/rl_stop"
+                android:layout_width="330dp"
+                android:layout_height="45dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="开始作业之前，请先暂停并执行以下步骤"
+                    android:textColor="@color/blue" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_think"
+                android:layout_width="330dp"
+                android:layout_height="65dp"
+                android:background="@drawable/b"></TextView>
+
+            <RelativeLayout
+                android:id="@+id/rl_think"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:padding="10dp"
+                    android:text="@string/tv_wubufa"
+                    android:textColor="@color/blue" />
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_identify"
+                android:layout_width="330dp"
+                android:layout_height="65dp"
+                android:background="@drawable/c">
+
+            </TextView>
+
+            <RelativeLayout
+                android:id="@+id/rl_identify"
+                android:layout_width="330dp"
+                android:layout_height="wrap_content"
+                android:background="#f4f4f4"
+                android:orientation="vertical"
+                android:padding="10dp"
+                android:visibility="gone"
+                >
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#638fbc" />
+
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="316dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#638fbc" />
+
+                <View
+                    android:id="@+id/v_tou"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#638fbc" />
+
+                <TextView
+                    android:id="@+id/tv_risk"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/v_tou"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/white"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="风险识别："
+                    android:textColor="@color/blue" />
+
+                <View
+                    android:id="@+id/v_risk"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tv_risk"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:background="#638fbc" />
+
+                <EditText
+                    android:id="@+id/et_risk"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/v_risk"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:background="@drawable/iconfont_input_bottom"
+                    android:textColor="@color/blue" />
+
+                <View
+                    android:id="@+id/v_preventive1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/et_risk"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:background="#638fbc" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/v_preventive1"
+                    android:layout_marginLeft="13dp"
+                    android:background="#638fbc" />
+                <View
+                    android:layout_width="1dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="316dp"
+                    android:layout_below="@+id/v_preventive1"
+                    android:background="#638fbc" />
+
+                <TextView
+                    android:id="@+id/tv_preventive"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_below="@+id/v_preventive1"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/white"
+                    android:gravity="left|center_vertical"
+                    android:paddingLeft="5dp"
+                    android:text="防范措施："
+                    android:textColor="@color/blue" />
+
+                <View
+                    android:id="@+id/v_preventive"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/tv_preventive"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:background="#638fbc" />
+
+                <EditText
+                    android:id="@+id/et_preventive"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/v_preventive"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginRight="13dp"
+                    android:background="@drawable/iconfont_input_bottom"
+                    android:textColor="@color/blue" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_confirm"
+                android:layout_width="330dp"
+                android:layout_height="65dp"
+                android:background="@drawable/d"
+                android:orientation="horizontal"></TextView>
+
+            <RelativeLayout
+                android:id="@+id/rl_confirm"
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:background="#f4f4f4"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:visibility="gone"
+                >
+
+                <CheckBox
+                    android:id="@+id/cb_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:button="@null"
+                    android:drawableRight="@drawable/chk_agee_provision_background"
+                    android:text="@string/tv_checkbox1"
+                    android:textColor="@color/blue"
+                    android:layout_alignParentTop="true" />
+
+                <CheckBox
+                    android:id="@+id/cb_2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cb_1"
+                    android:layout_marginTop="5dp"
+                    android:button="@null"
+                    android:drawablePadding="6dp"
+                    android:drawableRight="@drawable/chk_agee_provision_background"
+                    android:text="@string/tv_checkbox2"
+                    android:textColor="@color/blue" />
+
+                <CheckBox
+                    android:id="@+id/cb_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cb_2"
+                    android:layout_marginTop="5dp"
+                    android:button="@null"
+                    android:drawableRight="@drawable/chk_agee_provision_background"
+                    android:text="@string/tv_checkbox3"
+                    android:textColor="@color/blue" />
+
+                <CheckBox
+                    android:id="@+id/cb_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cb_3"
+                    android:layout_marginTop="5dp"
+                    android:button="@null"
+                    android:drawableRight="@drawable/chk_agee_provision_background"
+                    android:text="@string/tv_checkbox4"
+                    android:textColor="@color/blue" />
+
+                <CheckBox
+                    android:id="@+id/cb_5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/cb_4"
+                    android:layout_marginTop="5dp"
+                    android:button="@null"
+                    android:drawableRight="@drawable/chk_agee_provision_background"
+                    android:text="@string/tv_checkbox5"
+                    android:textColor="@color/blue" />
+
+
+                <!--<CheckedTextView-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:drawableRight="@drawable/box"-->
+                <!--android:text="ceshi"/>-->
+
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/tv_do"
+                android:layout_width="330dp"
+                android:layout_height="65dp"
+                android:background="@drawable/e"
+                android:orientation="horizontal">
+
+                <!--<TextView-->
+                <!--android:id="@+id/tv_05"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_weight="1"-->
+                <!--android:gravity="center"-->
+                <!--android:paddingLeft="12dp"-->
+                <!--android:text="05"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="21dp" />-->
+
+                <!--<TextView-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="center_vertical"-->
+                <!--android:layout_toRightOf="@+id/tv_05"-->
+                <!--android:layout_weight="3.5"-->
+                <!--android:paddingLeft="68dp"-->
+                <!--android:text="执行 Do"-->
+                <!--android:textColor="@color/white"-->
+                <!--android:textSize="21dp" />-->
+
+            </TextView>
+
+            <RelativeLayout
+                android:layout_width="330dp"
+                android:layout_height="200dp"
+                android:gravity="center">
+
+                <!--android:scaleType="fitXY"  //这是图片占满空间-->
+                <ImageView
+                    android:id="@+id/image_tu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_margin="15dp"
+
+                    android:src="@drawable/wubufa" />
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/tankuang"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="16sp"
+                android:text="异常处理"
+                android:textColor="@color/blue1"
+                android:textSize="18sp" />
+
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5px"
+                android:background="@color/blue1" />
+
+            <TextView
+                android:id="@+id/dialog_gas_exception_handle_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:text="巡检点名" />
+
+            <TextView
+                android:id="@+id/dialog_gas_exception_handle_project"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:text="巡检项目" />
+
+            <TextView
+                android:id="@+id/dialog_gas_exception_handle_result"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:text="巡检结果" />
+
+            <TextView
+                android:id="@+id/dialog_gas_exception_handle_description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:text="异常描述" />
+
+            <TextView
+                android:id="@+id/dialog_gas_exception_handle_suggestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingLeft="16dp"
+                android:paddingTop="10dp"
+                android:text="处理意见" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="65dp"
+                android:layout_marginTop="10dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="8dp"
+                    android:paddingLeft="16dp"
+                    android:paddingTop="10dp"
+                    android:text="处理结果" />
+
+                <EditText
+                    android:id="@+id/dialog_gas_exception_handle_exception_result"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:layout_marginLeft="12dp"
+                    android:layout_marginRight="16dp"
+                    android:background="@drawable/bg_edittext"
+                    android:gravity="left|top"
+                    android:hint="请输入异常处理结果"
+                    android:padding="8dp"
+                    android:paddingBottom="8dp"
+                    android:textColor="#000000"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp"
+                android:layout_marginTop="25dp"
+                android:paddingBottom="20dp" >
+
+                <Button
+                    android:id="@+id/dialog_gas_exception_handle_confirm"
+                    android:layout_width="0dip"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_blue"
+                    android:text="@string/confirm"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <Button
+                    android:id="@+id/dialog_gas_exception_handle_cancel"
+                    android:layout_width="0dip"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="40dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_blue"
+                    android:text="取消"
+                    android:visibility="gone"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+            android:id="@+id/tv_preview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="预览"
+            android:textColor="@color/blue1"
+            android:textSize="20sp"/>
+
+    <View
+            android:id="@+id/v_line"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5px"
+            android:layout_below="@+id/tv_preview"
+            android:background="@color/blue1"/>
+
+    <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v_line">
+
+        <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                        android:layout_marginTop="10dp"
+                        android:orientation="horizontal"
+                        android:id="@+id/ll_cur_lng"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp">
+
+                        <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="当前经度："
+                                android:textColor="@color/blue1"
+                                android:textSize="15sp"/>
+
+                        <TextView
+                                android:id="@+id/tv_cur_lng"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:paddingBottom="8dp"
+                                android:paddingRight="8dp"
+                                android:textColor="@color/blue1"
+                                android:textSize="15sp"/>
+                </LinearLayout>
+
+            <LinearLayout
+                    android:orientation="horizontal"
+                    android:id="@+id/ll_cur_lat"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="当前纬度："
+                        android:textColor="@color/blue1"
+                        android:textSize="15sp"/>
+
+                <TextView
+                        android:id="@+id/tv_cur_lat"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingRight="8dp"
+                        android:textColor="@color/blue1"
+                        android:textSize="15sp"/>
+            </LinearLayout>
+
+
+            <LinearLayout
+                    android:id="@+id/ll_message_description"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="信息描述："
+                        android:textColor="@color/blue1"
+                        android:textSize="15sp"/>
+
+                <TextView
+                        android:id="@+id/tv_message_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingRight="20dp"
+                        android:textColor="@color/blue1"
+                        android:textSize="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:id="@+id/ll_fill_time"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="填写时间："
+                        android:textColor="@color/blue1"
+                        android:textSize="15sp"/>
+
+                <TextView
+                        android:id="@+id/tv_fill_time"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="8dp"
+                        android:paddingRight="8dp"
+                        android:textColor="@color/blue1"
+                        android:textSize="15sp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="74dp"
+                    android:layout_marginTop="8dp"
+                    android:orientation="horizontal"
+                    android:paddingBottom="24dp">
+
+                <TextView
+                        android:id="@+id/tv_preview_pic"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_btn_blue"
+                        android:gravity="center"
+                        android:onClick="true"
+                        android:text="查看图片"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+
+                <TextView
+                        android:id="@+id/tv_ok"
+                        android:layout_width="0dip"
+                        android:layout_height="fill_parent"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="12dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/selector_btn_blue"
+                        android:gravity="center"
+                        android:onClick="true"
+                        android:text="确定"
+                        android:textColor="@color/white"
+                        android:textSize="16sp"/>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

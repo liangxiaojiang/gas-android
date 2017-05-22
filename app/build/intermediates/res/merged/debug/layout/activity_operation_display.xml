@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/operation_title"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/title">
+
+        <ImageView
+            android:id="@+id/operation_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:paddingLeft="10dp"
+            android:paddingRight="24dp"
+            android:src="@drawable/selector_btn_back"/>
+
+        <TextView
+            android:id="@+id/start_operation_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center_vertical|center_horizontal"
+            android:text="@string/operation_card"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <ListView
+        android:id="@+id/operationList"
+        android:layout_width="fill_parent"
+        android:layout_centerInParent="true"
+        android:layout_below="@+id/operation_title"
+        android:layout_height="wrap_content">
+    </ListView>
+
+</RelativeLayout>

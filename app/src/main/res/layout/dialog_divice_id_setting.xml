@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tankuang"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16sp"
+            android:text="设备号设置"
+            android:textColor="@color/blue1"
+            android:textSize="18sp" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="fill_parent"
+            android:layout_height="0.5px"
+            android:layout_below="@+id/title"
+            android:background="@color/blue1" />
+
+        <EditText
+            android:id="@+id/dialog_device_id_setting_num"
+            android:layout_width="fill_parent"
+            android:layout_height="45dp"
+            android:layout_below="@+id/view1"
+            android:layout_margin="20dp"
+            android:background="@drawable/input"
+            android:hint="请输入当前手机的手机号码"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="@color/blue"
+            android:textSize="15sp" />
+
+        
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dialog_device_id_setting_num"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:paddingBottom="20dp" >
+
+            <Button
+                android:id="@+id/dialog_device_id_setting_confirm"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:background="@drawable/selector_btn_blue"
+                android:text="@string/confirm"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/dialog_device_id_setting_cancel"
+                android:layout_width="120dp"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/selector_btn_blue"
+                android:text="取消"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

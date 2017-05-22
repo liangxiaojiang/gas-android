@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title">
+
+        <ImageView
+            android:id="@+id/gis_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:paddingLeft="10dp"
+            android:paddingRight="18dp"
+            android:src="@drawable/selector_btn_back" />
+
+        <TextView
+            android:id="@+id/gis_title_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="巡护作业"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/gis_history"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_btn_blue"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="历史"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/gis_img_start"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/selector_btn_start"
+        android:clickable="true"
+        android:contentDescription="@null" />
+
+    <TextView
+        android:id="@+id/gis_tv_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/gis_img_start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:padding="10dp"
+        android:text="巡护作业正在进行"
+        android:textColor="@color/blue1"
+        android:textSize="20dp"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/gis_tv_not_submit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gis_img_start"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:textColor="@color/blue1"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:id="@+id/gis_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/gis_submit"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_blue"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="提交数据"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/gis_upload"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_blue"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="上报信息"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/gis_time_setting"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_blue"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="时间设置"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

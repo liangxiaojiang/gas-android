@@ -1,0 +1,54 @@
+[
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\layout_alpha_out.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\anim\\layout_alpha_out.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_left_out.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\anim\\push_left_out.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_bottom_in_1.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\anim\\push_bottom_in_1.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_down_out.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\anim\\push_down_out.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_right_in.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\anim\\push_right_in.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_left_in.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\anim\\push_left_in.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_up_in.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\anim\\push_up_in.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\gif.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\anim\\gif.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\layout_alpha_in.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\anim\\layout_alpha_in.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\popwin_menu_out.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\anim\\popwin_menu_out.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\push_right_out.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\anim\\push_right_out.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\popwin_menu_enter.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\anim\\popwin_menu_enter.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\anim\\fade_in.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\anim\\fade_in.xml"
+    }
+]

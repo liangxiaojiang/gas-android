@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/exception_history_title"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/title">
+
+        <ImageView
+                android:id="@+id/exception_history_back"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentLeft="true"
+                android:contentDescription="@null"
+                android:paddingLeft="10dp"
+                android:paddingRight="18dp"
+                android:src="@drawable/selector_btn_back"/>
+
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:padding="10dp"
+                android:text="上报问题历史"
+                android:textColor="@color/white"
+                android:textSize="16sp"/>
+
+        <ImageView
+                android:id="@+id/download_confirm"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:contentDescription="@null"
+                android:paddingLeft="18dp"
+                android:paddingRight="10dp"
+                android:src="@drawable/selector_btn_finish"
+                android:visibility="gone"/>
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/notice_none_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="没有历史上报问题数据"
+            android:textColor="@color/gray"
+            android:textSize="18sp"/>
+
+    <com.joe.oil.view.CommentListView
+            android:divider="@null"
+            android:id="@+id/exception_history_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/exception_history_title"/>
+
+</RelativeLayout>

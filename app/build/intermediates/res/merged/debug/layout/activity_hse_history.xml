@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include
+            android:id="@+id/rl_top"
+            layout="@layout/top_bar"/>
+
+    <com.joe.oil.view.CommentListView
+            android:divider="@null"
+            android:id="@+id/lv_history"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/rl_top"/>
+
+    <TextView
+            android:gravity="center"
+            android:layout_below="@id/lv_history"
+            android:text="没有历史上报问题数据"
+            android:textColor="@color/gray"
+            android:textSize="18sp"
+            android:id="@+id/tv_empty"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+
+</RelativeLayout>

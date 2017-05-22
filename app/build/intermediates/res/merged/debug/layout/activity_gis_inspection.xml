@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#e8e8e8"
+        android:orientation="vertical">
+
+    <include
+            layout="@layout/top_bar"/>
+
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/rl_title"
+            android:orientation="vertical">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+            <RelativeLayout
+                    android:id="@+id/rl_line_inspection"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_start">
+
+                <ImageView
+                        android:id="@+id/iv_line_inspection"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="26dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/btn_gas_station_normal"/>
+
+                <TextView
+                        android:id="@+id/tv_line_inspection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_line_inspection"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="管线巡护"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="26dp"
+                        android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="0.5px"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue1"/>
+
+            <RelativeLayout
+                    android:id="@+id/rl_way_inspection"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_start">
+
+                <ImageView
+                        android:id="@+id/iv_way_inspection"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="26dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/btn_single_well_normal"/>
+
+                <TextView
+                        android:id="@+id/tv_way_inspection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_way_inspection"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="道路巡护"
+                        android:layout_marginBottom="26dp"
+                        android:textColor="@color/blue"
+                        android:textSize="18sp"/>
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="0.5px"
+                    android:layout_height="match_parent"
+                    android:background="@color/blue1"/>
+
+            <RelativeLayout
+                    android:id="@+id/rl_exception_inspection"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_start">
+
+                <ImageView
+                        android:id="@+id/iv_exception_inspection"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="26dp"
+                        android:contentDescription="@null"
+                        android:src="@drawable/btn_gps_inspection_normal"/>
+
+                <TextView
+                        android:id="@+id/tv_exception_inspection"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/iv_exception_inspection"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="12dp"
+                        android:text="异常巡护"
+                        android:textColor="@color/blue"
+                        android:layout_marginBottom="26dp"
+                        android:textSize="18sp"/>
+            </RelativeLayout>
+
+        </LinearLayout>
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5px"
+                android:background="@color/blue1"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            <RelativeLayout
+                    android:id="@+id/start_btn_work"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_start">
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="0.5px"
+                    android:layout_height="fill_parent"
+                    android:background="@color/blue1"/>
+
+            <RelativeLayout
+                    android:id="@+id/rl_upload"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_start">
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="0.5px"
+                    android:layout_height="fill_parent"
+                    android:background="@color/blue1"/>
+
+            <RelativeLayout
+                    android:id="@+id/rl_hse"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_start">
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5px"
+                android:background="@color/blue1"/>
+
+        <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dip"
+                android:layout_weight="1"
+                android:orientation="horizontal">
+
+            <RelativeLayout
+                    android:id="@+id/rl_message"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_start">
+            </RelativeLayout>
+
+            <View
+                    android:layout_width="0.5px"
+                    android:layout_height="fill_parent"
+                    android:background="@color/blue1"/>
+            <RelativeLayout
+                    android:id="@+id/start_btn_setting"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_start">
+
+            </RelativeLayout>
+
+
+            <View
+                    android:id="@+id/start_line"
+                    android:layout_width="0.5px"
+                    android:layout_height="fill_parent"
+                    android:background="@color/blue1"/>
+
+            <RelativeLayout
+                    android:id="@+id/start_btn_exit"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_start">
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+                android:layout_width="fill_parent"
+                android:layout_height="0.5px"
+                android:background="@color/blue1"/>
+    </LinearLayout>
+</LinearLayout>

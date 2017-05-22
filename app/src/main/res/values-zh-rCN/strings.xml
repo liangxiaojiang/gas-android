@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="rfidlib_app_name">rfidlib</string>
+    <string name="rfidlib_progress_scanning">正在搜索</string>
+    <string name="rfidlib_bluetooth_no_devices_found">未在附近找到设备。</string>
+    <string name="rfidlib_empty_list">列表为空</string>
+    <string name="rfidlib_bluetooth_searching_for_devices">正在搜索&#8230;</string>
+    <string name="rfidlib_bluetooth_search_for_devices">搜索设备</string>
+    <string name="rfidlib_bluetooth_preference_paired_devices">已配对的设备</string>
+    <string name="rfidlib_bluetooth_preference_found_devices">可用设备</string>
+    <string name="rfidlib_reader_discover">搜索读卡器</string>
+
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <include
+            layout="@layout/top_bar"/>
+
+    <ImageView
+            android:id="@+id/iv_upload_exception"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:background="@drawable/selector_btn_start"/>
+
+    <TextView
+            android:id="@+id/gis_tv_not_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_upload_exception"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:textColor="@color/blue1"
+            android:visibility="gone"/>
+
+    <TextView
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="30dp"
+            android:paddingRight="30dp"
+            android:layout_centerHorizontal="true"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/tv_submit"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:background="@drawable/selector_btn_blue"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="提交数据"
+            android:textColor="@color/white"
+            android:textSize="16sp"/>
+
+</RelativeLayout>

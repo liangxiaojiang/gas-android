@@ -1,0 +1,53 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReadRF" >
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/title">
+    
+    <ImageView 
+        android:id="@+id/read_rf_back"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:layout_centerVertical="true"
+       	android:src="@drawable/selector_btn_back"
+        android:paddingLeft="10dp"
+        android:contentDescription="@null"
+        android:paddingRight="18dp"
+       	android:clickable="true"/>
+
+    <TextView
+        android:id="@+id/record_positioninfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请读卡"
+        android:layout_centerInParent="true"
+        android:textColor="@android:color/white"
+        android:textSize="16sp" />
+    
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/done_number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/pleasereadcard" />
+    
+    <TextView 
+        android:id="@+id/done_please_read"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="请将采集器靠近巡检卡"
+        android:textColor="@color/sky_blue"
+        android:textSize="22sp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:layout_below="@+id/done_number" />
+
+</RelativeLayout>

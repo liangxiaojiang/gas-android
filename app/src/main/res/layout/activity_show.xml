@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal|center_vertical"
+   android:background="@color/black"
+    >
+
+    <ImageView
+        android:id="@+id/show_iv"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:scaleType="matrix"
+        android:src="@drawable/default_img"
+        />
+
+
+
+    <!--<com.joe.oil.imagehandle.ZoomImageView-->
+        <!--android:id="@+id/show_iv1"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:contentDescription="@null"-->
+        <!--android:src="@drawable/default_img"/>-->
+    <!--<ZoomControls-->
+        <!--android:id="@+id/zoomcontrol"-->
+        <!--android:layout_marginBottom="3dp"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--/>-->
+
+</RelativeLayout>

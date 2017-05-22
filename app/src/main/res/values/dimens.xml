@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="demin_default_padding">8dp</dimen>
+    <dimen name="checkbox_padding">5dp</dimen>
+    <dimen name="image_group_size">80dp</dimen>
+    <dimen name="demin_title_height">60dp</dimen>
+    <dimen name="demin_bottom_height">55dp</dimen>
+    <dimen name="dp_150">150dp</dimen>
+    <!--//7.27做五步法时添加-->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="historyscore_tb">10dp</dimen>
+
+</resources>

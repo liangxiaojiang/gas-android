@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="2dp"
+    android:paddingBottom="2dp">
+ <ImageView 
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:layout_alignParentLeft="true" 
+    android:layout_marginTop="6sp"
+    android:src="@drawable/icon_pin_blue"
+    android:contentDescription="dd"
+    android:layout_marginLeft="3dip"/>
+ <TextView 
+    android:id="@+id/route_name"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    android:textSize="14sp"
+    android:textColor="#4876FF"
+    android:layout_marginTop="4sp"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="35dip"/>
+
+</RelativeLayout>

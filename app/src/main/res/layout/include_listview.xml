@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <com.joe.oil.view.CommentListView1
+        android:divider="@null"
+        android:id="@+id/history_task"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/rl1"
+        android:background="@color/white"
+        android:layout_height="fill_parent"/>
+
+    <TextView
+        android:id="@+id/history_no_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/not_have_history_task"
+        android:layout_centerInParent="true"
+        android:textColor="@color/gray"
+        android:textSize="11sp"/>
+
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/title">
+
+        <ImageView
+                android:id="@+id/choose_office_btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:paddingLeft="10dp"
+                android:paddingRight="18dp"
+                android:src="@drawable/selector_btn_back"/>
+
+        <TextView
+                android:id="@+id/record_list_check_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="作业区选择"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <!-- <RelativeLayout
+        android:id="@+id/choose_office_one"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl1"
+        android:layout_margin="4dp"
+        android:background="@drawable/selector_item_set_bg2"
+        android:clickable="true" >
+
+        <TextView
+            android:id="@+id/setting_tv_gas_well"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="作业一区"
+            android:textColor="@color/blue1"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:contentDescription="@null"
+            android:src="@drawable/btn_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/choose_office_two"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose_office_one"
+        android:layout_margin="4dp"
+        android:background="@drawable/selector_item_set_bg2"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="作业二区"
+            android:textColor="@color/blue1"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:contentDescription="@null"
+            android:src="@drawable/btn_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/choose_office_three"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose_office_two"
+        android:layout_margin="4dp"
+        android:background="@drawable/selector_item_set_bg2"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="作业三区"
+            android:textColor="@color/blue1"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:contentDescription="@null"
+            android:src="@drawable/btn_arrow" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/choose_office_four"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/choose_office_three"
+        android:layout_margin="4dp"
+        android:background="@drawable/selector_item_set_bg2"
+        android:clickable="true" >
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="作业四区"
+            android:textColor="@color/blue1"
+            android:textSize="17sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            android:contentDescription="@null"
+            android:src="@drawable/btn_arrow" />
+    </RelativeLayout> -->
+
+    <ListView
+            android:divider="@null"
+            android:id="@+id/office_choose_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/rl1"/>
+
+</RelativeLayout>

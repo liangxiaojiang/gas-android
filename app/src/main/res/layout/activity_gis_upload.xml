@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true" >
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/title" >
+
+        <ImageView
+            android:id="@+id/gis_uplaod_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:paddingLeft="10dp"
+            android:paddingRight="18dp"
+            android:src="@drawable/selector_btn_back" />
+
+        <TextView
+            android:id="@+id/record_list_check_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="上报信息"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+        
+        <TextView 
+            android:id="@+id/gis_upload_history"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:text="历史"
+            android:textSize="14sp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:visibility="visible"
+            android:clickable="true"
+            android:background="@drawable/selector_btn_blue"
+            android:gravity="center"/>
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/rl1" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="12dp" >
+
+            <EditText
+                android:id="@+id/gis_upload_msg"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_margin="12dp"
+                android:background="@drawable/box"
+                android:gravity="top"
+                android:inputType="textMultiLine"
+                android:padding="5dp"
+                android:scrollbars="vertical" />
+
+            <ImageView
+                android:id="@+id/gis_upload_img"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/gis_upload_msg"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="10dp"
+                android:src="@drawable/default_img"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/gis_upload_take_photo"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/gis_upload_img"
+                android:layout_marginLeft="12dp"
+                android:layout_marginRight="12dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/selector_btn_blue"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="添加图片"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/gis_upload_submit"
+                android:layout_width="fill_parent"
+                android:layout_height="50dp"
+                android:layout_below="@+id/gis_upload_take_photo"
+                android:layout_margin="12dp"
+                android:background="@drawable/selector_btn_blue"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="提交"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

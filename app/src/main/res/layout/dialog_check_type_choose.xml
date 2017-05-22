@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/tankuang" >
+
+    <RelativeLayout
+        android:id="@+id/dialog_check_type_input_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:background="@color/blue1" >
+
+        <TextView
+            android:id="@+id/dialog_check_type_choose_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:padding="12dp"
+            android:text="巡检内容"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dialog_check_type_choose_edit"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_alignParentRight="true"
+            android:background="@drawable/selector_btn_blue"
+            android:clickable="true"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:text="编辑"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:visibility="gone" />
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/dialog_check_type_choose_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5px"
+        android:layout_below="@+id/dialog_check_type_input_rl"
+        android:background="@color/blue1" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/dialog_check_type_choose_line" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingBottom="24dp" >
+
+            <TextView
+                android:id="@+id/dialog_check_type_choose_station_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:padding="8dp"
+                android:text="巡检点名     大门口" />
+
+            <TextView
+                android:id="@+id/dialog_check_type_choose_check_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:padding="8dp"
+                android:text="检查内容     工艺确认" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="检查结果" />
+
+                <Spinner
+                    android:id="@+id/dialog_check_type_choose_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:gravity="start"
+                    android:background="@drawable/arrow"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="18dp"
+                    android:layout_marginTop="16dp"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:orientation="horizontal" >
+
+                <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:text="巡检记录" />
+
+                <EditText
+                        android:id="@+id/dialog_check_type_choose_jilu"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/bg_edittext"
+                        android:gravity="left|top"
+                        android:hint="请输入巡检记录"
+                        android:minHeight="80dp"
+                        android:padding="8dp"
+                        android:textColor="#000000"
+                        android:textCursorDrawable="@null"
+                        android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="16dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="异常描述" />
+
+                <EditText
+                    android:id="@+id/dialog_check_type_choose_exception"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/bg_edittext"
+                    android:gravity="left|top"
+                    android:hint="请输入异常现象"
+                    android:minHeight="80dp"
+                    android:padding="8dp"
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="18dp"
+                android:layout_marginTop="16dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:text="处理意见" />
+
+                <EditText
+                    android:id="@+id/dialog_check_type_choose_solve"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/bg_edittext"
+                    android:gravity="left|top"
+                    android:hint="请输入异常处理建议"
+                    android:minHeight="80dp"
+                    android:padding="8dp"
+                    android:textColor="#000000"
+                    android:textCursorDrawable="@null"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <TextView
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:id="@+id/dialog_check_type_input_tips"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="20dp"/>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/dialog_check_type_choose_photo_rl"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_blue" >
+
+            <TextView
+                android:id="@+id/dialog_check_type_choose_photo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="添图"
+                android:paddingTop="4dp"
+                android:paddingRight="4dp"
+                android:focusable="false"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:id="@+id/dialog_check_type_choose_photo_num"
+                android:layout_width="16dp"
+                android:layout_height="16dp"
+                android:layout_toRightOf="@+id/dialog_check_type_choose_photo"
+                android:layout_alignTop="@+id/dialog_check_type_choose_photo"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:visibility="gone"
+                android:background="@drawable/iconfont_notice"
+                android:textColor="@color/white" />
+        </RelativeLayout>
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/dialog_check_type_choose_movie"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_blue"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="录像"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/dialog_check_type_choose_confirm"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_blue"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white" />
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="@color/white" />
+
+        <TextView
+            android:id="@+id/dialog_check_type_choose_next"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_blue"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="下一项"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+</RelativeLayout>

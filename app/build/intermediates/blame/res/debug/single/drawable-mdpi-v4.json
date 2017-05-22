@@ -1,0 +1,30 @@
+[
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\rb_bg_01.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-mdpi\\rb_bg_01.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\rb_bg_01t.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-mdpi\\rb_bg_01t.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\rb_bg_02.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-mdpi\\rb_bg_02.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\ic_launcher.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\rb_bg_02t.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-mdpi\\rb_bg_02t.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\rb_bg_02f.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-mdpi\\rb_bg_02f.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4\\rb_bg_01f.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-mdpi\\rb_bg_01f.xml"
+    }
+]

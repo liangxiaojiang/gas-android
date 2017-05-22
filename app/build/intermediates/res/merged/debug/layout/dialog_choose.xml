@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/transparent">
+
+    <TextView
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:id="@+id/tv_one"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingTop="15dp"
+            android:textColor="@color/rgb_51_51_51"
+            android:textSize="18sp"/>
+
+    <TextView
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:id="@+id/tv_tow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="12sp"
+            android:paddingTop="15dp"
+            android:textColor="@color/rgb_51_51_51"
+            android:textSize="18sp"/>
+
+    <TextView
+            android:visibility="gone"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:id="@+id/tv_three"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="12dp"
+            android:paddingTop="15dp"
+            android:textColor="@color/rgb_51_51_51"
+            android:textSize="18sp"/>
+
+    <TextView
+            android:visibility="gone"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:id="@+id/tv_four"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="12sp"
+            android:paddingTop="15dp"
+            android:textColor="@color/rgb_51_51_51"
+            android:textSize="18sp"/>
+
+    <TextView
+            android:visibility="gone"
+            android:layout_marginTop="1dp"
+            android:background="@color/white"
+            android:id="@+id/tv_five"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="12sp"
+            android:paddingTop="15dp"
+            android:textColor="@color/rgb_51_51_51"
+            android:textSize="18sp"/>
+
+    <TextView
+            android:background="@color/white"
+            android:layout_marginTop="8dp"
+            android:id="@+id/tv_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:paddingBottom="12sp"
+            android:paddingTop="15dp"
+            android:text="取消"
+            android:textColor="@color/blue1"
+            android:textSize="18sp"/>
+
+</LinearLayout>

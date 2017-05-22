@@ -1,0 +1,302 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="D:\gas-android\app\libs\universal-image-loader-1.9.3.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a85588bec3e2c4584d593d3f15df1677321bca72">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\universal-image-loader-1.9.3_c51910bd19c4ce4c991333a085ba192a20fe9616.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\gas-android\app\libs\umeng-analytics-v5.2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0f9eccf79ae6006e4346725b09114182dca0c023">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\umeng-analytics-v5.2.4_495c173aef2c877cb9d96e172c7fb77dfb558bc2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\liangxiaojiang\.android\build-cache\2872377ca3fbc3e92a7a64467dc9a2797e023408\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_c3e2b9cc80bd77586e632931923231c9f6a48dda.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\gas-android\app\libs\jackson-core-lgpl-1.9.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="75ac72d19377a95225217cb4fdfa1290f3c81145">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\jackson-core-lgpl-1.9.5_028f7dceb0d9cc1c1e7fa1798819bfe6b2c90bda.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\liangxiaojiang\.android\build-cache\6b55e307403f08805b896f52d05ca95435cfdfd1\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\classes_81dcb03c9afb2b985a75a332f15af99d966380b0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\gas-android\app\libs\arcgis-android-api.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="eb453a27cea4ee79880d13ab5718c5c2d9586c49">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\arcgis-android-api_f84bf5a6b6f4729c3e9054dc9779e1cd5d099531.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\liangxiaojiang\.android\build-cache\0ae67e50d8cde3c96bacaa7e247cf03560c64f0b\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_73f7d71b9e4e1880724f03c3cbc4e2fab5d4f688.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidSdk\extras\android\m2repository\com\android\support\support-annotations\24.2.1\support-annotations-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\support-annotations-24.2.1_caca28a16431fee3775290649464e22a4378e1a5.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\liangxiaojiang\.android\build-cache\841d6e6dc44d785ac16621950d37aba839803a7b\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_178df36d283c38de21bad694afb5123ce69e696f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\gas-android\app\libs\bugly_crash_release.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="f8bc938afe7e140f7e270d158e44cf9938e70e1d">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\bugly_crash_release_18497b61b4907a8f1bd2e64f1d3017c7bbe715d9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\liangxiaojiang\.android\build-cache\6b55e307403f08805b896f52d05ca95435cfdfd1\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_ef70360314e5b5b88ac83a967a3411982e15b768.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\gas-android\app\libs\jxl.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a6f224353653001716448dec51065d050ac782b7">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\jxl_ef6616386789c8c9d6205527c066f2337a887190.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\gas-android\app\libs\jackson-mapper-lgpl-1.9.5.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ffbb48e87fa5e9107c17aaa0616f724d785a4d71">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\jackson-mapper-lgpl-1.9.5_07860d805da5732960bce5496f53a5d88c9c726a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\gas-android\app\libs\nineoldandroids-2.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="59f19e43354d32de831379c23ce03bb259a4c2b7">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\nineoldandroids-2.4.0_b47297e2e7b2b826b424507a424afa9091638683.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\gas-android\app\libs\jcifs-1.3.17.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1a2f0e28cc9497fb4927ea2422605fb8023969b6">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\jcifs-1.3.17_fcebc6b8951b1a447964334f5b8d7b2491599557.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\liangxiaojiang\.android\build-cache\841d6e6dc44d785ac16621950d37aba839803a7b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\classes_ca983f10aa7012dbb338e3366397087da7dfae2b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\gas-android\app\libs\tm-extractors-0.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="239791501815a43afa4d34a0eed96017a0352e84">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\tm-extractors-0.4_1a8ca960b510afd3ca5857becd462ff38edb59dc.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\liangxiaojiang\.android\build-cache\2872377ca3fbc3e92a7a64467dc9a2797e023408\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\classes_47f44effcb5dc1b63f6cee03155edf7339385123.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\liangxiaojiang\.android\build-cache\559679da90cdcc26f1078329b2836abfe760f7c7\output\jars\libs\internal_impl-24.2.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\internal_impl-24.2.1_1075571f68758223345a7cebe946c3cb2390313a.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\gas-android\app\libs\locSDK_4.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="41b93335a2753c93f8b8f56741615cb81ea72437">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\locSDK_4.2_43d565ce319bd17ef0616dd9736fb07c29d35924.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\gas-android\app\libs\AMap_Location_V3.3.0_20170118.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="299ccce875c1bbd5eb2802923ae89946e22b7ee6">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\AMap_Location_V3.3.0_20170118_7407d696b2c392d97920b5fae56099db7814798d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\liangxiaojiang\.android\build-cache\0ae67e50d8cde3c96bacaa7e247cf03560c64f0b\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\classes_8333b3e1f6b9bd23b4ec8b777e42f877088a0c03.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\liangxiaojiang\.android\build-cache\559679da90cdcc26f1078329b2836abfe760f7c7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\classes_1178319ba7e8cd85bacd3e0e92aef245e7a322d4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\gas-android\app\libs\AMap_Search_V3.4.0_20160811.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="298b0f77ab9b3d6aebae2eef0805e322a947fb4e">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\AMap_Search_V3.4.0_20160811_f290905ec215d2d83a4b5e5d68e590cedd992c06.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\AndroidStudio\gradle\m2repository\com\google\code\gson\gson\2.2.4\gson-2.2.4.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="a60a5e993c98c864010053cb901b7eab25306568">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\gson-2.2.4_5f1c89739ad7787010dddcfa73859601c32dd647.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\gas-android\app\libs\volley-1.0.8.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ec0f15c77ddd390e5ac514ac72ebbb9f2e0e31e2">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\volley-1.0.8_a5c95717fdd3958e7fbf0f7859a0bcb7887586bd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\gas-android\app\libs\xUtils-2.6.11.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="1c36413ba62fd6433e117bd58fe9264f3a1141a6">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\xUtils-2.6.11_d2b7f38957079ae0ff183292bc2fa155a64d79b4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\liangxiaojiang\.android\build-cache\9e357f7d13f2e434958c22954f7b515000e525ba\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\classes_3599098c72dac74ac2b4b4dbaa0c7df1868b02d2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\gas-android\app\libs\httpclient-4.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="0171c67fa04952e76bc9ee1e578fe629db35d769">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\httpclient-4.3.1_d185164a8060e986224b2182caf591afc2e99852.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\gas-android\app\libs\afinal_0.5.1_bin.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="ae398c74701392473b9cb488c76a92576d6f548c">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\afinal_0.5.1_bin_e8c8a2286f1cf20c6c842416009c6ac02c1df35c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\gas-android\app\libs\android-pdfview-lib-for-eclipse.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="339ccec8e4794dd03e1f134ef8d787a5ef442be5">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\android-pdfview-lib-for-eclipse_309d992354ddd056f043ed4905f90aa3c46db4ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\gas-android\app\libs\AMap_2DMap_V2.9.0_20160525.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="46212fcb15e2fcfcef796ab9f7af3fd1364f98f4">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\AMap_2DMap_V2.9.0_20160525_0d8f4860d63aae850eca1b11fe34a21715272f71.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="D:\gas-android\app\libs\commons-lang3-3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.0"
+        sha1="905075e6c80f206bbe6cf1e809d2caa69f420c76">
+        <dex dex="D:\gas-android\app\build\intermediates\pre-dexed\debug\commons-lang3-3.1_dd33c837200e98bfa065809d413ffb07d2a267b6.jar" />
+    </item>
+
+</items>

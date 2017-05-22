@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_auton"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/title">
+
+        <ImageView
+            android:id="@+id/autonomous_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:paddingLeft="10dp"
+            android:paddingRight="18dp"
+            android:src="@drawable/selector_btn_back" />
+
+        <TextView
+            android:id="@+id/autonomous_title_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="自主作业"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <!--<TextView-->
+        <!--android:id="@+id/upload_exception_history"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:background="@drawable/selector_btn_blue"-->
+        <!--android:clickable="true"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingLeft="20dp"-->
+        <!--android:paddingRight="20dp"-->
+        <!--android:text="历史"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="14sp" />-->
+    </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_bottom"
+        android:layout_below="@+id/rl_auton"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/light_gray"
+            android:paddingBottom="4dp">
+            <!--人员信息-->
+            <RelativeLayout
+                android:id="@+id/rl_people_autonomous"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/white"
+                android:paddingBottom="4dp"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:id="@+id/tv_people_autonomous"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="人员信息"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_info_autonomous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/tv_people_autonomous"
+                    android:gravity="center_vertical"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <TextView
+                    android:id="@+id/tv_autonomous"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/tv_info_autonomous"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            <!--配合人-->
+            <RelativeLayout
+                android:id="@+id/rl_matching_people"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_people_autonomous"
+                android:background="@color/white"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:layout_marginTop="4dp">
+
+                <TextView
+                    android:id="@+id/tv_matching_people_one"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="配合人"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_info_matching_people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/tv_matching_people_one"
+                    android:gravity="center_vertical"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <Spinner
+                    android:id="@+id/tv_matching_people"
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@id/tv_info_matching_people"
+                    android:background="@drawable/arrow"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+            <!--作业类型-->
+            <RelativeLayout
+                android:id="@+id/rl_job_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_matching_people"
+                android:layout_marginTop="4dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/tv_job_type"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:text="任务类型"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_job_type_bixuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/tv_job_type"
+                    android:gravity="center_vertical"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <Spinner
+                    android:id="@+id/spn_work_type"
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@id/tv_job_type_bixuan"
+                    android:background="@drawable/arrow" />
+
+                <Spinner
+                    android:id="@+id/work_type_spinner2"
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:layout_alignTop="@+id/spn_work_type"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_toRightOf="@+id/spn_work_type"
+                    android:background="@drawable/arrow"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/work_type_spinner3"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_toRightOf="@+id/spn_work_type"
+                    android:layout_below="@+id/work_type_spinner2"
+                    android:layout_marginTop="8dp"
+                    android:background="@drawable/arrow"
+                    android:visibility="gone" />
+
+            </RelativeLayout>
+            <!--作业点-->
+            <RelativeLayout
+                android:id="@+id/rl_operating_point"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/rl_job_type"
+                android:layout_alignStart="@+id/rl_job_type"
+                android:layout_below="@+id/rl_job_type"
+                android:layout_marginTop="4dp"
+                android:background="@color/white"
+                android:paddingBottom="10dp"
+                android:paddingTop="4dp">
+
+                <TextView
+                    android:id="@+id/tv_operating_point"
+                    android:layout_width="80dp"
+                    android:layout_height="35dp"
+                    android:gravity="center_vertical"
+                    android:paddingLeft="10dp"
+                    android:paddingTop="4dp"
+                    android:text="作业点"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_operating_point_bixuan"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="2dp"
+                    android:layout_toRightOf="@id/tv_operating_point"
+                    android:gravity="center_vertical"
+                    android:text="*"
+                    android:textColor="@color/red" />
+
+                <Spinner
+                    android:id="@+id/spn_office"
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/tv_operating_point_bixuan"
+                    android:background="@drawable/arrow" />
+
+                <Spinner
+                    android:id="@+id/spn_station_of_tree"
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:layout_alignTop="@id/spn_office"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_toRightOf="@id/spn_office"
+                    android:background="@drawable/arrow"
+                    android:visibility="gone" />
+
+                <Spinner
+                    android:id="@+id/spn_device"
+                    android:layout_width="130dp"
+                    android:layout_height="35dp"
+                    android:layout_below="@id/spn_station_of_tree"
+                    android:layout_marginLeft="2dp"
+                    android:layout_marginRight="4dp"
+                    android:layout_marginTop="4dp"
+                    android:layout_toRightOf="@id/spn_office"
+                    android:background="@drawable/arrow"
+                    android:visibility="gone" />
+
+                <TextView
+                    android:id="@+id/tv_read_operating_point"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="110dp"
+                    android:background="@drawable/cardreading"
+                    android:gravity="center_horizontal" />
+
+                <TextView
+                    android:id="@+id/tv_read_info"
+                    android:layout_width="fill_parent"
+                    android:layout_height="35dp"
+                    android:layout_marginBottom="2dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="110dp"
+                    android:gravity="center_vertical"
+                    android:layout_toRightOf="@id/tv_read_operating_point"
+                    android:textColor="@color/black"
+                    android:textSize="15sp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:orientation="horizontal">
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/rl_add_photo"-->
+        <!--android:layout_width="0dip"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:layout_weight="1"-->
+        <!--android:background="@drawable/selector_btn_blue"-->
+        <!--android:visibility="gone">-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_add_photo"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_centerInParent="true"-->
+        <!--android:focusable="false"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingRight="4dp"-->
+        <!--android:paddingTop="4dp"-->
+        <!--android:text="添图"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="16sp" />-->
+
+        <!--<TextView-->
+        <!--android:id="@+id/tv_photo_num"-->
+        <!--android:layout_width="16dp"-->
+        <!--android:layout_height="16dp"-->
+        <!--android:layout_alignTop="@+id/tv_add_photo"-->
+        <!--android:layout_toRightOf="@+id/tv_add_photo"-->
+        <!--android:background="@drawable/iconfont_notice"-->
+        <!--android:gravity="center"-->
+        <!--android:textColor="@color/white"-->
+        <!--android:textSize="12sp"-->
+        <!--android:visibility="gone" />-->
+        <!--</RelativeLayout>-->
+
+        <!--<View-->
+        <!--android:layout_width="0.5px"-->
+        <!--android:layout_height="fill_parent"-->
+        <!--android:background="@color/white" />-->
+
+        <TextView
+            android:id="@+id/tv_ok_autonomous"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_blue"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="确定"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+</RelativeLayout>

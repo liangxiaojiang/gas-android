@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/task_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/title">
+
+        <ImageView
+            android:id="@+id/task_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:padding="16dp"
+            android:src="@drawable/selector_btn_back"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/task_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/task"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_zhengzaigongzuo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/task_rl"
+        >
+
+        <TextView
+            android:id="@+id/tv_zhengzaigongz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="作业中任务"
+            android:background="#f0eff4"
+            android:textColor="@color/blue1"
+            android:textSize="18sp" />
+        <com.joe.oil.view.CommentListView
+            android:id="@+id/task_listview1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:layout_below="@+id/tv_zhengzaigongz" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl_zhengzaigongzuo"
+
+        >
+
+    <TextView
+        android:id="@+id/tv_daigongzuo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="待完成任务"
+        android:background="#f0eff4"
+        android:textColor="@color/blue1"
+        android:textSize="18sp" />
+
+    <com.joe.oil.view.CommentListView
+        android:id="@+id/task_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/tv_daigongzuo" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/new_task_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="55dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/task_synchronous"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_blue"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/synchronous"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:layout_width="0.5px"
+            android:layout_height="fill_parent"
+            android:background="@color/white" />
+        <!--
+                <TextView
+                    android:id="@+id/task_upload"
+                    android:layout_width="0dip"
+                    android:layout_height="fill_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_blue"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/submit"
+                    android:textColor="@color/white"
+                    android:textSize="16sp" />
+
+                <View
+                    android:layout_width="0.5px"
+                    android:layout_height="fill_parent"
+                    android:background="@color/white" />
+        -->
+        <TextView
+            android:id="@+id/task_history"
+            android:layout_width="0dip"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_btn_blue"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/history_task"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/task_no_task"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:text="@string/not_have_new_task"
+        android:textColor="@color/gray"
+        android:textSize="18sp" />
+
+</RelativeLayout>

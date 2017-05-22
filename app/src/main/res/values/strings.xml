@@ -1,0 +1,175 @@
+<resources>
+
+    <string name="app_name">UniWork</string>
+    <!-- login -->
+    <string name="login_name">用户名</string>
+    <string name="password">密码</string>
+    <string name="name">姓名</string>
+     <string name="viewpager_indicator">%1$d/%2$d</string>
+    
+    
+    <!-- refresh and load more -->
+    <string name="drop_dowm">下拉刷新</string>
+    <string name="listview_header_hint_normal">下拉刷新</string>
+    <string name="listview_footer_hint_normal">查看更多</string>
+    <string name="release_update">松开刷新</string>
+    <string name="loading">正在加载···</string>
+    <string name="seen_more">更多</string>
+    <string name="listview_header_hint_ready">松开刷新数据</string>
+    <string name="listview_header_last_time">上次更新时间：</string>
+    <string name="listview_footer_hint_ready">松开载入更多</string>
+    
+    <!-- fragment -->
+	<string name="inspection">巡检</string>
+	<string name="not_inspection">未巡</string>
+	<string name="already_inspection">已巡</string>
+	<string name="exception">异常</string>
+	
+	<!-- task -->
+	<string name="task">任务</string>
+	<string name="task_detail">任务详情</string>
+	<string name="provision_time">规定时间</string>
+	<string name="synchronous">同步</string>
+	<string name="submit">完成任务历史</string>
+	<string name="history">上传任务详情</string>
+	<string name="history_task">历史任务</string>
+    <string name="history_task1">完成任务历史</string>
+	<string name="not_have_new_task">没有新的任务数据</string>
+	<string name="not_have_history_task">没有历史任务数据</string>
+	
+	<!-- image -->
+	<string name="operation_card">操作卡</string>
+	
+	<!-- main -->
+	<string name="exit">退出</string>
+	<string name="station_check">场站巡护</string>
+	<string name="well_check">单井巡护</string>
+	<string name="gps_check">GIS</string>
+	<string name="setting">设置</string>
+	<string name="logout">注销</string>
+	
+	<!-- setting -->
+	<string name="setting_gas_ip">巡检设置(IP)</string>
+	<string name="setting_work_ip">作业设置(IP)</string>
+	<string name="setting_gps_ip">GPS设置(IP)</string>
+	<string name="setting_base_data_download">基础数据下载</string>
+	
+	<!-- download -->
+	<string name="clear_database">已清空本地数据表</string>
+	<string name="user_data_download_finish">用户数据下载完成</string>
+	<string name="office_data_download_finish">企业数据下载完成</string>
+	<string name="check_item_data_download_finish">巡检项数据下载完成</string>
+	<string name="device_data_download_finish">巡检点数据下载完成</string>
+	<string name="well_data_download_finish">单井数据下载完成</string>
+	<string name="line_data_download_finish">管线数据下载完成</string>
+	<string name="plan_data_download_finish">巡检计划模板下载完成</string>
+	<string name="dict_data_download_finish">字典集下载完成</string>
+    <string name="tank_date_download_finish">车辆信息下载完成</string>
+    <string name="task_date_download_finish">任务模板下载完成</string>
+	
+	<!-- task_finish -->
+	<!--<string name="task_finished_situation">作业完成情况</string>  7.26根据文档更改-->
+    <string name="task_finished_situation">作业信息填报</string>
+	<string name="input_not_finished_reason">请输入未完成的原因(任务已完成可不填写此项)</string>
+	<string name="add_picture">添加图片</string>
+	<string name="confirm">确定</string>
+	
+	<!-- view_inspection -->
+	<string name="current_should_inspection">当前应检点为：</string>
+
+
+	<string name="rfidlib_app_name">rfidlib</string>
+	<string name="rfidlib_progress_scanning">Searching</string>
+	<string name="rfidlib_bluetooth_no_devices_found">No nearby devices were found.</string>
+	<string name="rfidlib_empty_list">Empty list</string>
+	<string name="rfidlib_bluetooth_searching_for_devices">Searching\u2026</string>
+	<string name="rfidlib_bluetooth_search_for_devices">Search for devices</string>
+	<string name="rfidlib_bluetooth_preference_paired_devices">Paired devices</string>
+	<string name="rfidlib_bluetooth_preference_found_devices">Available devices</string>
+	<string name="rfidlib_reader_discover">Reader Discover</string>
+	
+    <string name="scan">Scan</string>
+    <string name="reader_discover">Reader Discover</string>
+    <string name="connecting">Connecting\u2026</string>
+    <string name="connect_to_reader">Connect To Reader</string>
+    <string name="connect_to_reader_faild_title">Connect To Reader Failed</string>
+    <string name="connect_to_reader_faild_dialog_message">Reconnect click Retry, scan deivce click Scan.</string>
+    <string name="retry">Retry</string>
+    <string name="cancel">Cancel</string>
+    <string name="ok">OK</string>
+    <string name="clean">Clean</string>
+    <string name="button_connect">Connect To Reader</string>
+    <string name="button_seltoiso14443a">Select To ISO14443A</string>
+    <string name="button_seltomifare">Select To MIFARE classic</string>
+    <string name="button_seltoiso15693">Select To ISO15693</string>
+    <string name="iso15693">ISO15693</string>
+    <string name="edit_block">Enter block number</string>
+    <string name="edit_blk_cnt">Enter block count</string>
+    <string name="edit_data">Enter the data (HEX)</string>
+    <string name="edit_afi">Enter the AFI (HEX)</string>
+    <string name="edit_dsfid">Enter the DSFID (HEX)</string>
+    <string name="button_inventory">Inventory</string>
+    <string name="button_stay_quiet">Stay Quiet</string>
+    <string name="button_read_single_block">Read Single Block</string>
+    <string name="button_write_single_block">Write Single Block</string>
+    <string name="button_lock_block">Lock Block</string>
+    <string name="button_read_multi_block">Read Multi Block</string>
+    <string name="button_select">Select</string>
+    <string name="button_reset_to_ready">Reset To Ready</string>
+    <string name="button_write_afi">Write AFI</string>
+    <string name="button_lock_afi">Lock AFI</string>
+    <string name="button_write_dsfid">Write DSFID</string>
+    <string name="button_lock_dsfid">Lock DSFID</string>
+    <string name="button_get_sys_info">Get Sys Info</string>
+    <string name="button_get_secure_stat">Get Block Security</string>
+    <string name="iso14443a">ISO14443A</string>
+    <string name="spiner_cascade_level">Cascade level</string>
+    <string name="edit_uid">Enter UID (HEX)</string>
+    <string name="button_reqa">REQA</string>
+    <string name="button_wupa">WUPA</string>
+    <string name="button_hlta">HLTA</string>
+    <string name="button_anticllision">Anti-collision</string>
+    <string name="button_rats">RATS</string>
+    <string name="mifareclassic">MIFARE Classic</string>
+    <string name="edit_key">Enter the key</string>
+    <string name="spinner_key_type">Key Type</string>
+    <string name="button_read">Read</string>
+    <string name="button_write">Write</string>
+
+    <string name="download">新版本下载中</string>
+    <string name="prompt">请下载完毕后进行其他操作</string>
+
+    <string name="tv_name">登录人员： 作业X区-XXX</string>
+    <string name="tv_version">当前版本： v0.0.1</string>
+    <string name="tv_date">更新日期： 2015–05-26</string>
+    <string name="tv_setting">设置</string>
+    <string name="tv_upload">隐患上报</string>
+    <string name="tv_no_data_tips">还没有消息</string>
+
+    <string name="tv_scanning">扫描</string>
+    <string name="tv_footprint">足迹</string>
+    <string name="tv_foundproblem">发现问题</string>
+    <string name="tv_Worktimes">总作业次数</string>
+    <string name="tv_totaloperationtime">总作业时间</string>
+    <string name="tv_signin">签到</string>
+    <string name="tv_thebadge">徽章</string>
+
+    <string name="tv_wubufa">请思考以下问题：\n\n1\t你是否了解本次工作任务是什么？\n\n\t是否需要办理作业许可？\n\n\t作业是否需要持证上岗？\n\n2\t本作业场所有哪些危险，会出现意外吗？\n\n\t如出现意外会伤害到自己或者别人吗？\n\n3\t所处工作环境状况如何？能满足安全需求吗？\n\n\t使用的设备、检测报警装置和工器具状态\n\n\t和安全性能是否良好，能正常工作吗？</string>
+    <string name="tv_checkbox1">\t确认工作程序、操作规程已熟悉和掌握。</string>
+    <string name="tv_checkbox2">\t确认各项许可证、上岗证齐全有效。</string>
+    <string name="tv_checkbox3">\t确认工作环境、设备状况、检测报警装置和工器具状态良好。</string>
+    <string name="tv_checkbox4">\t确认已掌握对可能发生的突发事件的应急处置程序。</string>
+    <string name="tv_checkbox5">\t如果存在中断或交接，请确认作业进行到什么程度？作业场所、条件、环境是否发生改变？</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="soft_update_no">已经是最新版本</string>
+    <string name="soft_update_title">软件更新</string>
+    <string name="soft_update_info">检测到新版本，立即更新吗</string>
+    <string name="soft_update_updatebtn">更新</string>
+    <string name="soft_update_later">稍后更新</string>
+    <string name="soft_updating">正在更新</string>
+    <string name="soft_update_cancel">取消</string>
+
+
+</resources>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/ems_ic_preference_single_normal" >
+
+        <ImageView
+            android:id="@+id/item_take_photo_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:padding="6dp"
+            android:contentDescription="@null"
+            android:src="@drawable/default_img" />
+        
+        <TextView 
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
+            android:textColor="@color/blue1"
+            android:layout_toRightOf="@+id/item_take_photo_img"
+            android:layout_centerVertical="true"
+            android:text="张三_2014-7-24 16:24:20"/>
+    </RelativeLayout>
+
+</RelativeLayout>

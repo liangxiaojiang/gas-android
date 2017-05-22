@@ -1,0 +1,746 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/white">
+
+    <RelativeLayout
+        android:id="@+id/jobpreview_rl"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/title">
+
+        <ImageView
+            android:id="@+id/task_ddialog_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="24dp"
+            android:src="@drawable/selector_btn_back"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/dialog_check_type_input_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="作业信息预览"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/jobpreview_rl"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            >
+            <!--完成情况-->
+            <RelativeLayout
+                android:id="@+id/item_exception_job_rl1"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/item_exception_job_tv2"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:text="完成情况："
+                    android:textColor="@color/blue1"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dialog_job_preview_happening"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/item_exception_job_tv2"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="8dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/item_exception_job_rl1"
+                android:background="#f0eff4" />
+            <!--工作记录-->
+            <RelativeLayout
+                android:id="@+id/item_exception_job_rl2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_exception_job_rl1"
+                >
+
+                <TextView
+                    android:id="@+id/item_exception_job_tv1"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:text="工作记录："
+                    android:textColor="@color/blue1"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dialog_job_preview_recording"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/item_exception_job_tv1"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="8dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/item_exception_job_rl2"
+                android:background="#f0eff4" />
+            <!--<ListView-->
+                <!--android:divider="@null"-->
+                <!--android:id="@+id/task_template"-->
+                <!--android:layout_width="fill_parent"-->
+                <!--android:layout_below="@+id/item_exception_job_rl2"-->
+                <!--android:layout_height="fill_parent"/>-->
+
+            <LinearLayout
+                android:id="@+id/titles_lll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:layout_below="@+id/item_exception_job_rl2"
+                android:gravity="center"
+                android:orientation="vertical"
+                >
+
+            </LinearLayout>
+
+            <!--入库量-->
+            <RelativeLayout
+                android:id="@+id/item_exception_job_rl5"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/titles_lll"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/item_exception_job_tv5"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:layout_marginTop="10dp"
+                    android:textColor="@color/blue1"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dialog_job_preview_remark5"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="20dp"
+                    android:textSize="15sp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toRightOf="@+id/item_exception_job_tv5"
+                    android:layout_toEndOf="@+id/item_exception_job_tv5" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/item_exception_job_rl5"
+                android:background="#f0eff4" />
+
+            <!--卸车前储罐液位-->
+            <RelativeLayout
+                android:id="@+id/item_exception_job_rl6"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_exception_job_rl5"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/item_exception_job_tv6"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:textColor="@color/blue1"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dialog_job_preview_remark6"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/item_exception_job_tv6"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="20dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/item_exception_job_rl6"
+                android:background="#f0eff4" />
+            <!--卸车车号-->
+            <RelativeLayout
+                android:id="@+id/item_exception_job_rl7"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_exception_job_rl6"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/item_exception_job_tv7"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:textColor="@color/blue1"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dialog_job_preview_remark7"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/item_exception_job_tv7"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="20dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/item_exception_job_rl7"
+                android:background="#f0eff4" />
+            <!--注入量-->
+            <RelativeLayout
+                android:id="@+id/item_exception_job_rl15"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_exception_job_rl7"
+                android:visibility="gone"
+                >
+
+                <TextView
+                    android:id="@+id/item_exception_job_tv15"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:textColor="@color/blue1"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dialog_job_preview_remark15"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/item_exception_job_tv15"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="20dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v_1"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/item_exception_job_rl15"
+                android:background="#f0eff4" />
+
+            <!--卸车后储罐液位-->
+            <RelativeLayout
+                android:id="@+id/rl_ceshi"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_exception_job_rl15"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_ruhou"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:textColor="@color/blue1"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/tv_ruhouces"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/tv_ruhou"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="20dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/rl_ceshi"
+                android:background="#f0eff4" />
+            <!--驾驶员-->
+            <RelativeLayout
+                android:id="@+id/item_exception_job_rl18"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rl_ceshi"
+                android:visibility="gone">
+
+
+                <TextView
+                    android:id="@+id/item_exception_job_tv18"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:textColor="@color/blue1"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/dialog_job_preview_remark18"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/item_exception_job_tv18"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="20dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/item_exception_job_rl18"
+                android:background="#f0eff4" />
+            <!--押运员-->
+            <RelativeLayout
+                android:id="@+id/item_exception_job_rl19"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_exception_job_rl18"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/item_exception_job_tv19"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:textColor="@color/blue1"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/dialog_job_preview_remark19"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/item_exception_job_tv19"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="20dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/item_exception_job_rl19"
+                android:background="#f0eff4" />
+            <!--磅单量-->
+            <RelativeLayout
+                android:id="@+id/item_exception_job_rl20"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_exception_job_rl19"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/item_exception_job_tv20"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:textColor="@color/blue1"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/dialog_job_preview_remark20"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/item_exception_job_tv20"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="20dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/item_exception_job_rl20"
+                android:background="#f0eff4" />
+            <!--密度-->
+            <RelativeLayout
+                android:id="@+id/item_exception_job_rl21"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_exception_job_rl20"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/item_exception_job_tv21"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:textColor="@color/blue1"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/dialog_job_preview_remark21"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/item_exception_job_tv21"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="20dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/item_exception_job_rl21"
+                android:background="#f0eff4" />
+            <!--卸车前流量计读数-->
+            <RelativeLayout
+                android:id="@+id/item_exception_job_rl22"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_exception_job_rl21"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/item_exception_job_tv22"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:textColor="@color/blue1"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/dialog_job_preview_remark22"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/item_exception_job_tv22"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="20dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/item_exception_job_rl22"
+                android:background="#f0eff4" />
+            <!--卸车后流量计读数-->
+            <RelativeLayout
+                android:id="@+id/item_exception_job_rl23"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_exception_job_rl22"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/item_exception_job_tv23"
+                    android:layout_width="80dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:textColor="@color/blue1"
+                    android:textSize="15sp"
+                    />
+                <TextView
+                    android:id="@+id/dialog_job_preview_remark23"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/item_exception_job_tv23"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="20dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_below="@+id/item_exception_job_rl23"
+                android:background="#f0eff4" />
+            <!--备注-->
+            <RelativeLayout
+                android:id="@+id/item_exception_job_rl3"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_exception_job_rl23"
+                >
+
+
+                <TextView
+                    android:id="@+id/item_exception_job_tv3"
+                    android:layout_width="80dp"
+                    android:layout_height="45dp"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="15dp"
+                    android:gravity="left|center"
+                    android:text="备注："
+                    android:textColor="@color/blue1"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/dialog_job_preview_remark"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="7dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="13dp"
+                    android:gravity="left|center"
+                    android:paddingLeft="8dp"
+                    android:scrollbars="vertical"
+                    android:textColor="@color/black"
+                    android:layout_toRightOf="@+id/item_exception_job_tv3"
+                    android:paddingBottom="8dp"
+                    android:paddingRight="20dp"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@+id/item_exception_job_rl3"
+                android:background="#f0eff4" />
+
+            <RelativeLayout
+                android:id="@+id/item_exception_job_rl4"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_exception_job_rl3"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp">
+
+                <!--<TextView-->
+                    <!--android:id="@+id/tv_pic_selected_notice"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+
+                    <!--android:maxLines="2"-->
+                    <!--android:padding="16dp"-->
+                    <!--android:text="确认你所选择的图片"-->
+                    <!--android:textColor="@color/qianhui"-->
+                    <!--android:textSize="18sp" />-->
+
+                <GridView
+                    android:id="@+id/finish_add_picture"
+                    android:layout_width="wrap_content"
+                    android:layout_height="85dp"
+                    android:clickable="true"
+                    android:columnWidth="90dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="3"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_below="@+id/item_exception_job_rl4"
+                android:background="#f0eff4" />
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/item_exception_job_rl4"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="#00000000"
+                android:clickable="true"
+                android:contentDescription="@null">
+
+                <TextView
+                    android:id="@+id/item_exception_job_tv4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:text="请确认作业信息后刷卡提交"
+                    android:textColor="@color/blue1"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/task_detail_iv_read_card"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:paddingTop="5dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="#00000000"
+                    android:clickable="true"
+                    android:contentDescription="@null"
+                    android:src="@drawable/selector_btn_read_card" />
+
+                <!--<ImageView-->
+                    <!--android:id="@+id/task_detail_iv_read_card1"-->
+                    <!--android:layout_width="wrap_content"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:layout_centerHorizontal="true"-->
+                    <!--android:layout_marginTop="20dp"-->
+                    <!--android:paddingTop="5dp"-->
+                    <!--android:layout_gravity="center_horizontal"-->
+                    <!--android:background="#00000000"-->
+                    <!--android:clickable="true"-->
+                    <!--android:contentDescription="@null"-->
+                    <!--android:src="@drawable/btn_finish_pressed"-->
+                    <!--android:visibility="gone"/>-->
+
+
+                <TextView
+                    android:id="@+id/item_exception_job_tv123"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/task_detail_iv_read_card"
+                    android:layout_centerHorizontal="true"
+                    android:layout_gravity="center_horizontal"
+                    android:textColor="@color/blue1"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

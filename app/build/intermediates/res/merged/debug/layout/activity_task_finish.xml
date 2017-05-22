@@ -1,0 +1,2124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:android_custom="http://schemas.android.com/apk/res/com.joe.oil"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/title">
+
+        <ImageView
+            android:id="@+id/task_finish_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="24dp"
+            android:src="@drawable/selector_btn_back"
+            android:textSize="16sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="@string/task_finished_situation"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <!--<ImageView-->
+        <!--android:id="@+id/iv_task_details"-->
+        <!--android:layout_width="wrap_content"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:layout_alignParentRight="true"-->
+        <!--android:layout_centerVertical="true"-->
+        <!--android:adjustViewBounds="true"-->
+        <!--android:clickable="true"-->
+        <!--android:contentDescription="@null"-->
+        <!--android:cropToPadding="true"-->
+        <!--android:gravity="center"-->
+        <!--android:paddingRight="12dp"-->
+        <!--android:scaleType="fitEnd"-->
+        <!--android:src="@drawable/guanyu_1" />-->
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:background="#f0eff4"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:orientation="vertical">
+
+
+            <RelativeLayout
+                android:id="@+id/framelayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:background="@color/white"
+                android:clickable="true"
+                android:contentDescription="@null">
+
+                <FrameLayout
+
+                    android:layout_width="200dp"
+                    android:layout_height="170dp"
+                    android:layout_marginLeft="100dp"
+                    android:layout_marginRight="100dp"
+                    android:layout_marginTop="7dp">
+
+                    <ImageView
+                        android:id="@+id/framlay"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_gravity="center"
+                        android:src="@drawable/zuoyezhong" />
+
+                    <com.joe.oil.util.RoundProgressBar
+                        android:id="@+id/roundProgressBar3"
+                        android:layout_width="100dip"
+                        android:layout_height="100dip"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        android:layout_gravity="center"
+                        android_custom:roundColor="@color/blue"
+                        android_custom:roundProgressColor="#D1D1D1"
+                        android_custom:roundWidth="10dip"
+                        android_custom:textIsDisplayable="true"
+                        android_custom:textSize="15sp" />
+
+                </FrameLayout>
+
+                <!--<ImageView-->
+                <!--android:id="@+id/task_detail_iv_read_card"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:layout_centerHorizontal="true"-->
+                <!--android:layout_gravity="center_horizontal"-->
+                <!--android:background="#00000000"-->
+                <!--android:clickable="true"-->
+                <!--android:contentDescription="@null"-->
+                <!--android:src="@drawable/selector_btn_read_card"-->
+                <!--android:visibility="gone" />-->
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/task_detail_tv_end_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:visibility="gone"
+
+                />
+
+            <TextView
+                android:id="@+id/tv_complete_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:id="@+id/task_detail_tv_created_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20px"
+                android:background="#e5e5e5"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="12sp"
+                android:visibility="gone" />
+
+            <TextView
+                android:id="@+id/tv_Already_work"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="12sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/white" />
+
+            <!--折叠显示任务详情-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:background="@color/white">
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="2dp"-->
+                <!--android:layout_marginTop="5dp"-->
+                <!--android:background="#c9c9c9" />-->
+
+
+                <LinearLayout
+                    android:id="@+id/ll_xiangqing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_xiangqig"
+                    android:background="#f0eff4"
+                    android:orientation="vertical"
+                    android:visibility="gone"
+                    >
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/tips_riskTips"
+                            android:layout_width="80dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentTop="false"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="left|center"
+                            android:text="工作要求"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_riskTips"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_toRightOf="@id/tips_riskTips"
+                            android:background="@null"
+                            android:gravity="left|center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/tips_controlTips"
+                            android:layout_width="80dp"
+                            android:layout_height="60dp"
+                            android:layout_alignParentTop="false"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="left|center"
+                            android:text="控制措施与风险提示"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_controlTips"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_toRightOf="@id/tips_controlTips"
+                            android:background="@null"
+                            android:gravity="left|center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/tips_memo"
+                            android:layout_width="80dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentTop="false"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="left|center"
+                            android:text="备注"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_memo"
+                            android:layout_width="fill_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="13dp"
+                            android:layout_toRightOf="@id/tips_memo"
+                            android:background="@null"
+                            android:gravity="left|center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/tips_charger"
+                            android:layout_width="80dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentTop="false"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="left|center"
+                            android:text="负责人"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_charger"
+                            android:layout_width="fill_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/tips_charger"
+                            android:background="@null"
+                            android:gravity="left|center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/tips_partner"
+                            android:layout_width="80dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentTop="false"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="left|center"
+                            android:text="配合人"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_partner"
+                            android:layout_width="fill_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/tips_partner"
+                            android:background="@null"
+                            android:gravity="left|center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/tips_vehicleNumber"
+                            android:layout_width="80dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentTop="false"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="left|center"
+                            android:text="车牌号"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_vehicleNumber"
+                            android:layout_width="fill_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/tips_vehicleNumber"
+                            android:background="@null"
+                            android:gravity="left|center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/tips_vehicleDriverName"
+                            android:layout_width="80dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentTop="false"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="left|center"
+                            android:text="驾驶员姓名"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_vehicleDriverName"
+                            android:layout_width="fill_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/tips_vehicleDriverName"
+                            android:background="@null"
+                            android:gravity="left|center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/tips_vehicleDriverPhone"
+                            android:layout_width="80dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentTop="false"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="left|center"
+                            android:text="驾驶员电话"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_vehicleDriverPhone"
+                            android:layout_width="fill_parent"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/tips_vehicleDriverPhone"
+                            android:background="@null"
+                            android:gravity="left|center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <TextView
+                            android:id="@+id/tips_route"
+                            android:layout_width="80dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentTop="false"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="left|center"
+                            android:text="行车路线"
+                            android:textSize="15sp" />
+
+                        <TextView
+                            android:id="@+id/tv_route"
+                            android:layout_width="150dp"
+                            android:layout_height="45dp"
+                            android:layout_marginLeft="7dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/tips_route"
+                            android:background="@null"
+                            android:gravity="left|center"
+                            android:paddingLeft="8dp"
+                            android:paddingRight="8dp"
+                            android:scrollbars="vertical"
+                            android:textColor="@color/black"
+                            android:textSize="14sp" />
+                        <ImageView
+                            android:id="@+id/iv_daohang1"
+                            android:layout_width="match_parent"
+                            android:layout_height="45dp"
+                            android:padding="7dp"
+                            android:layout_toRightOf="@+id/tv_route"
+                            android:src="@drawable/daohang" />
+                    </RelativeLayout>
+
+                    <ListView
+                        android:id="@+id/list1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/title"
+                        android:layout_centerInParent="true"
+                        android:divider="@null" />
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_xiangqig"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/taskFinishName"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="12dp"
+                        android:layout_marginRight="20dp"
+                        android:gravity="left"
+                        android:paddingTop="12dp"
+                        android:textSize="16sp" />
+
+                    <ImageView
+                        android:id="@+id/finishmore"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:src="@drawable/xiangxia" />
+
+                    <ImageView
+                        android:id="@+id/finishmore1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="12dp"
+                        android:src="@drawable/xiangshang"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+            <!--工作完成情况-->
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="11dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:orientation="vertical">
+
+                <!--工作完成情况-->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    >
+
+                    <Spinner
+                        android:id="@+id/finish_spinner"
+                        android:layout_width="fill_parent"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginRight="20dp"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:layout_toRightOf="@+id/tv_workqingkuang"
+                        android:background="@drawable/arrow" />
+
+                    <EditText
+                        android:id="@+id/finish_reason"
+                        android:layout_width="fill_parent"
+                        android:layout_height="120dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/et_upload_message"
+                        android:gravity="left|top"
+                        android:hint="@string/input_not_finished_reason"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="8dp"
+                        android:textSize="16sp"
+                        android:visibility="gone" />
+
+                    <TextView
+                        android:id="@+id/tv_workqingkuang"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:gravity="left|center"
+                        android:text="工作完成情况"
+                        android:textSize="15sp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_alignParentTop="true"
+                        android:layout_toRightOf="@+id/finish_reason"
+                        android:layout_toEndOf="@+id/finish_reason" />
+                </RelativeLayout>
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="#f0eff4" />
+
+                <!--工作记录-->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center">
+
+                    <TextView
+                        android:id="@+id/tv_workjilu"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="工作记录"
+                        android:textSize="15sp"
+
+                        />
+
+                    <EditText
+                        android:id="@+id/finish_jilu"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginTop="13dp"
+                        android:layout_toEndOf="@+id/tv_workjilu"
+                        android:layout_toRightOf="@+id/tv_workjilu"
+                        android:background="@null"
+                        android:gravity="left|center"
+                        android:hint="请输入工作记录"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:scrollbars="vertical"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:id="@+id/titles_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+
+
+                <!--密度-->
+                <RelativeLayout
+                    android:id="@+id/rl_density"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_density"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="密度"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_density"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_density"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入密度"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--卸车前流量计读数（m³）-->
+                <RelativeLayout
+                    android:id="@+id/rl_before_readflow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_before_readflow"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="卸车前流量计读数（m³）"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_before_readflow"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_before_readflow"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入卸车前流量计读数"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--卸车后流量计读数（m³）-->
+                <RelativeLayout
+                    android:id="@+id/rl_after_readflow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_after_readflow"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="卸车后流量计读数（m³）"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_after_readflow"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_after_readflow"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入卸车后流量计读数"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--输入库量(方)-->
+                <RelativeLayout
+                    android:id="@+id/rl_jieshoufangshu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_jieshoufangshu"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="入库量(方)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_jieshoufangshu"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_jieshoufangshu"
+                        android:background="@null"
+                        android:gravity="left|center"
+                        android:hint="请输入入库量(方)"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--注前液位-->
+                <RelativeLayout
+                    android:id="@+id/rl_zhuqian"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_zhuqian"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="注前液位(mm)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_qianyewei"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_zhuqian"
+                        android:background="@null"
+                        android:gravity="left|center"
+                        android:hint="请输入注入前液位"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--注后液位-->
+                <RelativeLayout
+                    android:id="@+id/rl_zhuhouyewei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_zhuhouyewei"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="注后液位(mm)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_zhuhouyewei"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_zhuhouyewei"
+                        android:background="@null"
+                        android:gravity="left|center"
+                        android:hint="请输入注后液位"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--添加量-->
+                <RelativeLayout
+                    android:id="@+id/rl_tianjialiang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <EditText
+                        android:id="@+id/finish_tianjialiang"
+                        android:layout_width="fill_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_tianjialiang"
+                        android:background="@null"
+                        android:gravity="left|center"
+                        android:hint="请输入添加量(L)"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_tianjialiang"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="添加量(L)"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--注入量-->
+                <RelativeLayout
+                    android:id="@+id/rl_zhuruliang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_zhuruliang"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="注入量 (方)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_zhuruliang"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_zhuruliang"
+                        android:background="@null"
+                        android:gravity="left|center"
+                        android:hint="请输入注入量"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--车牌号-->
+                <RelativeLayout
+                    android:id="@+id/rl_licenseplate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_licenseplate"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="设备类型和牌号"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_licenseplate"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_licenseplate"
+                        android:background="@null"
+                        android:gravity="left|center"
+                        android:hint="请输入设备类型和牌号"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--卸车车号-->
+                <RelativeLayout
+                    android:id="@+id/rl_guanchehhao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_guanchehhao"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="卸车车号"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_guanchehhao"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_guanchehhao"
+                        android:background="@null"
+                        android:gravity="left|center"
+                        android:hint="请输入卸车车号"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--驾驶员-->
+                <RelativeLayout
+                    android:id="@+id/rl_driver"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_driver"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="驾驶员"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_driver"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_driver"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入驾驶员"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--押运员-->
+                <RelativeLayout
+                    android:id="@+id/rl_escort"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_escort"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="押运员"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_escort"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_escort"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入押运员"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--磅单量-->
+                <RelativeLayout
+                    android:id="@+id/rl_pound_weight"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_pound_weight"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="磅单量"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_pound_weight"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_pound_weight"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入磅单量"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--卸车前储罐液位（mm）-->
+                <RelativeLayout
+                    android:id="@+id/rl_ruqianyewei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_ruqianyewei"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="卸车前储罐液位（mm）"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_ruqianye"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_ruqianyewei"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入卸车前储罐液位"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--卸车后储罐液位（mm）-->
+                <RelativeLayout
+                    android:id="@+id/rl_ruhouyewei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_ruhouyewei"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="卸车后储罐液位（mm）"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_ruhouye"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_ruhouyewei"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入卸车后储罐液位"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--下拉选择车号-->
+                <RelativeLayout
+                    android:id="@+id/rl_xialachehao"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_xialachehao"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="车号"
+                        android:textSize="15sp" />
+
+                    <Spinner
+                        android:id="@+id/spinner_car"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center_horizontal"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_xialachehao"
+                        android:background="@drawable/arrow" />
+                </RelativeLayout>
+
+                <!--这是横截面（在页面不显示，但监听了，下面计算的时候用到这个布局）-->
+                <EditText
+                    android:id="@+id/finish_chehao"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="5dp"
+                    android:gravity="left|top"
+                    android:paddingLeft="8dp"
+                    android:paddingRight="8dp"
+                    android:paddingTop="8dp"
+                    android:textSize="16sp"
+                    android:visibility="gone" />
+
+                <!--装前液位-->
+                <RelativeLayout
+                    android:id="@+id/rl_zhaungqianyewei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_zhaungqianyewei"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="装前液位(mm)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_zhuangqianye"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_zhaungqianyewei"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入装前液位(mm)"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--装后液位-->
+                <RelativeLayout
+                    android:id="@+id/rl_zhuanghouyewei"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_zhaunghouyewei"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="装后液位(mm)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_zhuanghouye"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_zhaunghouyewei"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入装后液位(mm)"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--装车量-->
+                <RelativeLayout
+                    android:id="@+id/rl_zhuangcheliang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_zhuangcheliang"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="装车量 （方）"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_zhuangcheliang"
+                        android:layout_width="fill_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_zhuangcheliang"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:numeric="integer"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--装车前流量计读数（m³）-->
+                <RelativeLayout
+                    android:id="@+id/rl_before_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_before_loading"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="装车前流量计读数（m³）"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_before_loading"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_before_loading"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入装车前流量计读数"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--装车后流量计读数（m³）-->
+                <RelativeLayout
+                    android:id="@+id/rl_after_loading"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_after_loading"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="装车后流量计读数（m³）"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_after_loading"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_after_loading"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入装车后流量计读数"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--出库（装车）量-流量计(方)-->
+                <RelativeLayout
+                    android:id="@+id/rl_outgoing_quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_outgoing_quantity"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="出库量(方)"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_outgoing_quantity"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_outgoing_quantity"
+                        android:background="@null"
+                        android:gravity="left|center"
+                        android:hint="请输入出库量(方)"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:singleLine="true"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--取样记录-->
+                <RelativeLayout
+                    android:id="@+id/rl_quyang"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_quyang"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="取样记录"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_quyang"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_quyang"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入取样记录"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--浓度-->
+                <RelativeLayout
+                    android:id="@+id/rl_concentration"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:id="@+id/v_concentration"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <EditText
+                        android:id="@+id/finish_concentration"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_concentration"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入浓度"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_concentration"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="浓度(%)"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--合格or不合格-->
+                <RelativeLayout
+                    android:id="@+id/rl_qualified"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <TextView
+                        android:id="@+id/tv_qualified"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="是否合格"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/finish_qualified"
+                        android:layout_width="match_parent"
+                        android:layout_height="45dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/tv_qualified"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--确认注入量是否合格-->
+                <RelativeLayout
+                    android:id="@+id/rl_shifouhege"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone">
+
+                    <View
+                        android:id="@+id/v_confirm"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <EditText
+                        android:id="@+id/finish_confirm_qualified"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/v_confirm"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_toRightOf="@+id/tv_confirm"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入是否合格"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:scrollbars="vertical"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_confirm"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="确认注入量是否合格"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+                <!--确认是否合格-->
+                <RelativeLayout
+                    android:id="@+id/rl_queren"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:visibility="gone"
+                    >
+                    <RelativeLayout
+                        android:id="@+id/rl_cai"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#f0eff4" />
+
+                        <TextView
+                            android:id="@+id/tv_cai"
+                            android:layout_width="80dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentTop="false"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="left|center"
+                            android:text="柴油机"
+                            android:textSize="15sp" />
+                        <Spinner
+                            android:id="@+id/spinner1"
+                            android:layout_width="fill_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/tv_cai"
+                            android:background="@drawable/arrow"
+                            />
+                        <!--<CheckBox-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_marginLeft="180dp"-->
+                            <!--android:layout_toRightOf="@+id/tv_cai"-->
+                            <!--android:button="@null"-->
+                            <!--android:drawableRight="@drawable/chk_agee_provision_background" />-->
+                    </RelativeLayout>
+
+                    <!--注醇管线-->
+                    <RelativeLayout
+                        android:id="@+id/rl_zhucunguanxian"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_zhucunbeng"
+                        android:background="@color/white">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#f0eff4" />
+
+                        <TextView
+                            android:id="@+id/tv_zhucunguanxian"
+                            android:layout_width="80dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentTop="false"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="left|center"
+                            android:text="注醇管线"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/spinner2"
+                            android:layout_width="fill_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/tv_zhucunguanxian"
+                            android:background="@drawable/arrow"
+                            />
+
+                        <!--<CheckBox-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_marginLeft="180dp"-->
+                            <!--android:layout_toRightOf="@+id/tv_zhucunguanxian"-->
+                            <!--android:button="@null"-->
+                            <!--android:drawableRight="@drawable/chk_agee_provision_background" />-->
+                    </RelativeLayout>
+                    <!--电瓶-->
+                    <RelativeLayout
+                        android:id="@+id/rl_dianping"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_zhucunguanxian"
+                        android:background="@color/white">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#f0eff4" />
+
+                        <TextView
+                            android:id="@+id/tv_dianping"
+                            android:layout_width="80dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentTop="false"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="left|center"
+                            android:text="电瓶"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/spinner3"
+                            android:layout_width="fill_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/tv_dianping"
+                            android:background="@drawable/arrow"
+                            />
+                        <!--<CheckBox-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_marginLeft="180dp"-->
+                            <!--android:layout_toRightOf="@+id/tv_dianping"-->
+                            <!--android:button="@null"-->
+                            <!--android:drawableRight="@drawable/chk_agee_provision_background" />-->
+                    </RelativeLayout>
+                    <!--安全阀-->
+                    <RelativeLayout
+                        android:id="@+id/rl_anquanfa"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_dianping"
+                        android:background="@color/white">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#f0eff4" />
+
+                        <TextView
+                            android:id="@+id/tv_anquanfa"
+                            android:layout_width="80dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentTop="false"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="left|center"
+                            android:text="安全阀"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/spinner4"
+                            android:layout_width="fill_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/tv_anquanfa"
+                            android:background="@drawable/arrow"
+                            />
+
+                        <!--<CheckBox-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_marginLeft="180dp"-->
+                            <!--android:layout_toRightOf="@+id/tv_anquanfa"-->
+                            <!--android:button="@null"-->
+                            <!--android:drawableRight="@drawable/chk_agee_provision_background" />-->
+                    </RelativeLayout>
+                    <!--灭火器-->
+                    <RelativeLayout
+                        android:id="@+id/rl_extinguisher"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/rl_anquanfa"
+                        android:background="@color/white">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#f0eff4" />
+
+                        <TextView
+                            android:id="@+id/tv_extinguisher"
+                            android:layout_width="80dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentTop="false"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="left|center"
+                            android:text="灭火器"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/spinner5"
+                            android:layout_width="fill_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/tv_extinguisher"
+                            android:background="@drawable/arrow"
+                            />
+
+                        <!--<CheckBox-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_marginLeft="180dp"-->
+                            <!--android:layout_toRightOf="@+id/tv_extinguisher"-->
+                            <!--android:button="@null"-->
+                            <!--android:drawableRight="@drawable/chk_agee_provision_background" />-->
+                    </RelativeLayout>
+                    <!--注醇泵-->
+                    <RelativeLayout
+                        android:id="@+id/rl_zhucunbeng"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@color/white"
+                        android:layout_below="@+id/rl_cai"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true">
+
+                        <View
+                            android:layout_width="match_parent"
+                            android:layout_height="1dp"
+                            android:background="#f0eff4" />
+
+                        <TextView
+                            android:id="@+id/tv_zhucunbeng"
+                            android:layout_width="80dp"
+                            android:layout_height="45dp"
+                            android:layout_alignParentTop="false"
+                            android:layout_marginLeft="15dp"
+                            android:gravity="left|center"
+                            android:text="注醇泵"
+                            android:textSize="15sp" />
+
+                        <Spinner
+                            android:id="@+id/spinner6"
+                            android:layout_width="fill_parent"
+                            android:layout_height="35dp"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_toRightOf="@+id/tv_zhucunbeng"
+                            android:background="@drawable/arrow"
+                          />
+
+                        <!--<CheckBox-->
+                            <!--android:layout_width="wrap_content"-->
+                            <!--android:layout_height="match_parent"-->
+                            <!--android:layout_marginLeft="180dp"-->
+                            <!--android:layout_toRightOf="@+id/tv_zhucunbeng"-->
+                            <!--android:button="@null"-->
+                            <!--android:drawableRight="@drawable/chk_agee_provision_background" />-->
+                    </RelativeLayout>
+                </RelativeLayout>
+                <!--备注-->
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white">
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="#f0eff4" />
+
+                    <EditText
+                        android:id="@+id/finish_beizhu"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/view"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_marginTop="13dp"
+                        android:layout_toRightOf="@+id/tv_workmone"
+                        android:background="@null"
+                        android:gravity="left|center_vertical"
+                        android:hint="请输入备注"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:scrollbars="vertical"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/tv_workmone"
+                        android:layout_width="80dp"
+                        android:layout_height="45dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="备注"
+                        android:textSize="15sp" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/finish_img"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="12dp"
+                android:contentDescription="@null"
+                android:paddingTop="10dp"
+                android:src="@drawable/default_img"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:background="@color/white"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp">
+
+                <!--<ImageView-->
+
+                <!--android:layout_marginTop="10dp"-->
+                <!--android:layout_marginRight="10dp"-->
+                <!--android:id="@+id/imageView1"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:scaleType="fitXY"-->
+                <!--android:src="@drawable/gridview_addpic" />-->
+
+                <GridView
+                    android:id="@+id/finish_add_picture"
+                    android:layout_width="fill_parent"
+                    android:layout_height="200dp"
+                    android:clickable="true"
+                    android:columnWidth="90dp"
+                    android:gravity="center"
+                    android:horizontalSpacing="5dp"
+                    android:numColumns="4"
+                    android:stretchMode="columnWidth"
+                    android:verticalSpacing="5dp" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="11dp"
+                android:background="#f0eff4" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="10dp"
+                android:background="@color/white">
+
+                <TextView
+                    android:id="@+id/finish_add_preview"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_blue"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="预览"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/finish_confirm"
+                    android:layout_width="fill_parent"
+                    android:layout_height="45dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/selector_btn_blue"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:text="@string/confirm"
+                    android:textColor="@color/white"
+                    android:textSize="15sp"
+                    android:visibility="gone" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <TextView
+
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="66dp"
+        android:layout_marginRight="66dp"
+        android:layout_marginTop="17dp" />
+
+</RelativeLayout>

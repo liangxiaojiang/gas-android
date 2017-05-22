@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.joe.oil"
+    android:versionCode="60"
+    android:versionName="1.9.1" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="22" />
+
+    <!-- 添加NFC设备的使用许可 -->
+    <uses-permission android:name="android.permission.NFC" />
+
+    <uses-feature
+        android:name="android.hardware.nfc"
+        android:required="true" />
+    <!-- 下载的时候不显示通知栏 -->
+    <uses-permission android:name="android.permission.DOWNLOAD_WITHOUT_NOTIFICATION" />
+    <!-- 过滤掉不支持的Intent -->
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_MOCK_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_GPS" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.AUTHENTICATE_ACCOUNTS" />
+    <uses-permission android:name="android.permission.USE_CREDENTIALS" />
+    <uses-permission android:name="android.permission.MANAGE_ACCOUNTS" />
+    <uses-permission android:name="com.android.launcher.permission.READ_SETTINGS" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <!-- 安装apk权限 -->
+    <uses-permission android:name="android.permission.INSTALL_PACKAGES" />
+
+    <!-- RfidReaderLib所需权限 -->
+    <permission android:name="net.safetone.permission.BLUETOOTH_RFID_READER" />
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="net.safetone.permission.BLUETOOTH_RFID_READER" />
+    <!-- service中显示全局的dialog -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.RESTART_PACKAGES\" />
+
+    <!-- bugly配置权限start -->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_LOGS" />
+    <!-- bugly配置权限end -->
+    <!-- Normal Permissions 不需要运行时注册 -->
+    <uses-permission android:name="android.permission.CHANGE_CONFIGURATION" />
+    <!-- 需要运行时注册的权限 -->
+    <!-- 读取缓存数据 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:name="com.joe.oil.activity.OilApplication"
+        android:allowBackup="true"
+        android:debuggable="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+
+        <!-- android:debuggable="true" -->
+        <activity android:name="com.joe.oil.activity.LoginActivity" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.nfc.action.TAG_DISCOVERED" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.joe.oil.activity.MainActivity" />
+        <activity android:name="com.joe.oil.activity.TaskActivity" />
+        <activity android:name="com.joe.oil.activity.TaskDetailActivity" />
+        <activity android:name="com.joe.oil.activity.HistoryActivity" />
+        <activity android:name="com.joe.oil.activity.ImageActivity" />
+        <activity android:name="com.joe.oil.activity.SettingActivity" />
+        <activity android:name="com.joe.oil.activity.InspectionActivity" />
+        <activity android:name="com.joe.oil.activity.DownloadActivity" />
+        <activity android:name="com.joe.oil.activity.TaskFinishActivity" />
+        <activity android:name="com.joe.oil.activity.ReadRF" />
+        <activity android:name="com.joe.oil.activity.CheckItemActivity" />
+        <activity android:name="com.joe.oil.activity.GisActivity" />
+        <activity android:name="com.joe.oil.activity.GisUploadActivity" />
+        <activity android:name="com.joe.oil.activity.TakePhotoActivity" />
+        <activity android:name="com.joe.oil.activity.LineActivity" />
+        <activity android:name="com.joe.oil.activity.StationChooseActivity" />
+        <activity android:name="com.joe.oil.activity.OfficeChooseActivity" />
+        <activity android:name="com.joe.oil.activity.UploadExceptionActivity" />
+        <activity android:name="com.joe.oil.activity.OtherDownloadActivity" />
+        <activity android:name="com.joe.oil.activity.ImagePagerActivity" />
+        <activity android:name="com.joe.oil.activity.ExceptionHistoryActivity" />
+        <activity android:name="com.joe.oil.activity.OtherStationChooseActivity" />
+        <activity android:name="com.joe.oil.activity.GisHistroyActivity" />
+        <activity android:name="com.joe.oil.activity.PicSelectedEnsureActivity" />
+        <activity android:name="com.joe.oil.imagepicker.ImagePickerActivity" />
+        <activity android:name="com.joe.oil.imagepicker.QiAlbumViewFragment" />
+        <activity android:name="com.joe.oil.demo.LoadPicActivity" />
+        <activity android:name="com.joe.oil.activity.ReadActivity" />
+        <activity android:name="com.joe.oil.activity.GisUploadHistoryActivity" />
+        <activity android:name="com.joe.oil.activity.MessageDetailActivity" />
+        <activity android:name="com.joe.oil.activity.MessageListActivity" />
+        <activity android:name="com.joe.oil.activity.HseSupervisionActivity" />
+        <activity android:name="com.joe.oil.activity.HseHistoryActivity" />
+        <activity android:name="com.joe.oil.activity.GisInspectionActivity" />
+        <activity android:name="com.joe.oil.activity.GisExceptionInspectionActivity" />
+        <activity android:name="com.joe.oil.activity.PicDetailActivity" />
+        <activity android:name="com.joe.oil.activity.ExceptionHistoryDetailActivity" />
+        <activity android:name="com.joe.oil.activity.GisUploadHistoryDetailActivity" />
+        <activity android:name="com.joe.oil.activity.PersonalActivity" />
+        <activity android:name="com.joe.oil.activity.FootprintActivity" />
+        <activity android:name="com.joe.oil.activity.SignActivity" />
+        <activity android:name="com.joe.oil.activity.EvaluationActivity" />
+        <activity android:name="com.joe.oil.activity.DetailsTaskActivity" />
+        <activity android:name="com.joe.oil.activity.SingleActivity" />
+        <activity android:name="com.joe.oil.activity.SingleDetailsActivity" />
+        <activity android:name="com.joe.oil.activity.ScannerActivity" />
+        <activity android:name="com.joe.oil.activity.DeviceInfoActivity" />
+        <activity android:name="com.joe.oil.activity.TaskDeviceActivity" />
+        <activity
+            android:name="com.joe.oil.parolmap.NavigationActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.joe.oil.parolmap.MapTapActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.joe.oil.parolmap.ItemSettingActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.joe.oil.parolmap.POISearchActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.joe.oil.parolmap.RouteActivity"
+            android:launchMode="singleTop"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity
+            android:name="com.joe.oil.parolmap.SettingssActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.NoTitleBar" />
+        <activity android:name="com.joe.oil.activity.DataAccessActivity" />
+        <activity android:name="com.joe.oil.activity.FiveStepsActivity" />
+        <activity android:name="com.joe.oil.activity.AutonomousActivity" />
+        <activity android:name="com.joe.oil.activity.ImageListActivity" />
+        <activity android:name="com.joe.oil.activity.ShowImageActivity" />
+        <activity android:name="com.joe.oil.activity.TaskFillDetailActivity" />
+        <activity android:name="com.joe.oil.activity.OperationDisplayActivity" />
+        <activity android:name="com.joe.oil.activity.PDFviewActivity" />
+        <activity android:name="com.joe.oil.activity.TxtReadActivity" />
+        <activity android:name="com.joe.oil.activity.FeedbackActivity" />
+
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" />
+            </intent-filter>
+        </service>
+        <service
+            android:name="com.joe.oil.service.OilService"
+            android:enabled="true" />
+        <service android:name="com.joe.oil.service.UpdateService" />
+        <service android:name="com.joe.oil.service.TaskFinishService" />
+
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="usQC1YRCqHwhuR8M63f7TIZe" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="547d0a82fd98c519cb00063f" />
+
+        <!-- 高德API -->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="f6fcb5b9c2060ca99d2a0ca9ad831938" />
+
+        <service android:name="com.amap.api.location.APSService" />
+    </application>
+
+</manifest>

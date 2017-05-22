@@ -1,0 +1,58 @@
+[
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\emotionstore_progresscancelbtn.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-xhdpi\\emotionstore_progresscancelbtn.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\img_shape.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-xhdpi\\img_shape.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\icon_app.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-xhdpi\\icon_app.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\end.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-xhdpi\\end.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\stop1.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-xhdpi\\stop1.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\start.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-xhdpi\\start.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\ic_launcher.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\route_add.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-xhdpi\\route_add.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\end1.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-xhdpi\\end1.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\navbar_back.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-xhdpi\\navbar_back.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\route_del.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-xhdpi\\route_del.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\route_node.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-xhdpi\\route_node.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\start1.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-xhdpi\\start1.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4\\hseinspection.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-xhdpi\\hseinspection.png"
+    }
+]

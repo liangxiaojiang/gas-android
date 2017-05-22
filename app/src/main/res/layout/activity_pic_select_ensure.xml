@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <RelativeLayout
+        android:id="@+id/rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/title" >
+
+        <TextView
+            android:id="@+id/tv_title_modify"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingLeft="16dp"
+            android:paddingRight="24dp"
+            android:text="修改"
+            android:textColor="@android:color/white"
+            android:background="@drawable/selector_btn_blue"
+            android:textSize="22sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="当前图片"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/tv_title_ensure"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:paddingLeft="24dp"
+            android:paddingRight="16dp"
+            android:text="确定"
+            android:textColor="@android:color/white"
+            android:background="@drawable/selector_btn_blue"
+            android:textSize="22sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_pic_selected_notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rl1"
+        android:maxLines="2"
+        android:padding="16dp"
+        android:text="确认你所选择的图片"
+        android:textColor="@color/qianhui"
+        android:textSize="18sp" />
+
+    <GridView
+        android:id="@+id/wv_pic_selected"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_pic_selected_notice"
+        android:layout_marginLeft="12dp"
+        android:layout_marginRight="12dp"
+        android:horizontalSpacing="@dimen/checkbox_padding"
+        android:listSelector="@null"
+        android:numColumns="3"
+        android:scrollbars="none"
+        android:verticalSpacing="@dimen/checkbox_padding" >
+    </GridView>
+
+</RelativeLayout>

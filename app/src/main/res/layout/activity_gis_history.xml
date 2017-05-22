@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/title">
+
+        <ImageView
+                android:id="@+id/gis_history_back"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:paddingLeft="10dp"
+                android:paddingRight="18dp"
+                android:src="@drawable/selector_btn_back"/>
+
+        <TextView
+                android:id="@+id/gis_history_title_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:gravity="center"
+                android:text="巡护作业历史"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/notice_none_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="没有历史巡护作业数据"
+            android:textColor="@color/gray"
+            android:textSize="18sp"/>
+
+    <com.joe.oil.view.CommentListView
+            android:divider="@null"
+            android:id="@+id/gis_history_listview"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/rl1"/>
+
+</RelativeLayout>

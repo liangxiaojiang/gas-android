@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.joe.oil.view.ResizeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:id="@+id/resizeLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/loginbeij"
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:id="@+id/imageView" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/imageView">
+
+        <LinearLayout
+            android:id="@+id/ll_user"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="false"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="37dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/username"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入用户名"
+                android:background="@drawable/iconfont_input_top"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textCursorDrawable="@null"/>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/ll_user"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="60dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:id="@+id/ll_pass"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_alignParentTop="false"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentStart="false"
+            android:layout_below="@+id/ll_user"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="25dp">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/password"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="请输入密码"
+                android:background="@drawable/iconfont_input_top"
+                android:paddingLeft="24dp"
+                android:paddingRight="24dp"
+                android:singleLine="true"
+                android:textColor="#333333"
+                android:textCursorDrawable="@null"/>
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_below="@+id/ll_pass"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="60dp"
+            android:background="@color/gray"/>
+
+        <LinearLayout
+            android:id="@+id/ll_jizhumima"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:layout_centerVertical="false"
+            android:layout_alignParentStart="false"
+            android:layout_below="@+id/ll_pass"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginStart="22dp"
+            android:layout_alignParentLeft="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="记住密码"/>
+
+            <CheckBox
+                android:layout_width="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/checkBox"
+                android:layout_weight="1"
+                android:autoText="false" />
+
+            <TextView
+                android:text="忘记密码？"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/textView3"
+                android:gravity="right|center_horizontal"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_denglu"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_below="@+id/ll_jizhumima"
+            android:layout_centerHorizontal="true"
+            android:layout_marginLeft="35dp"
+            android:layout_marginRight="60dp"
+            android:layout_marginTop="16dp">
+            <Button
+                android:id="@+id/bt_denglu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="登陆"
+                android:textColor="@color/white"
+                android:background="@color/blue1"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="没有登陆账号，点这里快速登陆"
+                android:gravity="center_horizontal"
+                android:textColor="@color/blue1"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="西安商鼎能源科技有限公司"
+            android:layout_below="@+id/ll_denglu"
+            android:gravity="center_horizontal"
+            android:textSize="10sp"
+            android:layout_marginTop="30dp"/>
+    </RelativeLayout>
+</com.joe.oil.view.ResizeLayout>

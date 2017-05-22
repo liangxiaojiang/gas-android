@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/tankuang" >
+    
+	<TextView 
+	    android:id="@+id/title"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:padding="16dp"
+	    android:text="查看照片"
+	    android:textColor="@color/blue1"
+	    android:textSize="20sp"/>
+	
+	<TextView 
+	    android:id="@+id/dialog_check_out_photo_name"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="张三_2010-7-24 17:14:22"
+	    android:textColor="@color/blue1"
+	    android:layout_alignParentRight="true"
+	    android:layout_marginRight="10dp"
+	    android:padding="4dp"
+	    android:layout_alignBottom="@+id/title"/>
+	
+	<View 
+	    android:id="@+id/line"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0.5px"
+	    android:layout_below="@+id/title"
+	    android:background="@color/blue1"/>
+	
+	<com.joe.oil.imagehandle.ZoomImageView 
+	    android:id="@+id/dialog_check_out_img"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:layout_below="@+id/line"
+	    android:contentDescription="@null"
+	    android:src="@drawable/default_img"/>
+    
+</RelativeLayout>

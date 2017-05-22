@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#f0eff4" />
+    <TextView
+        android:id="@+id/tv_work_name"
+        android:layout_width="80dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="false"
+        android:layout_marginLeft="15dp"
+        android:gravity="left|center"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/et_shuzi"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="20dp"
+        android:layout_toRightOf="@+id/tv_work_name"
+        android:background="@null"
+        android:gravity="left|center_vertical"
+        android:inputType="numberDecimal"
+        android:paddingLeft="8dp"
+        android:paddingRight="8dp"
+        android:textSize="15sp"
+       />
+
+</RelativeLayout>

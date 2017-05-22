@@ -1,0 +1,439 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/task_single_rl1"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/title">
+
+        <ImageView
+            android:id="@+id/task_single_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:layout_centerVertical="true"
+            android:clickable="true"
+            android:contentDescription="@null"
+            android:gravity="center"
+            android:paddingLeft="12dp"
+            android:paddingRight="24dp"
+            android:src="@drawable/selector_btn_back"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/task_single_tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="路单详情"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/task_single_rl1">
+
+        <RelativeLayout
+            android:id="@+id/rl_single_xiangqing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/task_single_rl1">
+
+            <LinearLayout
+                android:id="@+id/ll_xiangqinga"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        android:id="@+id/single_vehicleNumber"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="车牌号："
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vehicleNumber"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/single_vehicleNumber"
+                        android:gravity="left|center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        android:id="@+id/single_driver"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="驾驶员："
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Drive_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/single_driver"
+                        android:gravity="left|center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        android:id="@+id/single_DriverPhone"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="驾驶员电话："
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Driver_phone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/single_DriverPhone"
+                        android:gravity="left|center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        android:id="@+id/single_passenger"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="乘车人："
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vehiclerDrive_name"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/single_passenger"
+                        android:gravity="left|center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        android:id="@+id/single_vehicleDriverPhone"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="乘车人电话："
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/vehicleDriver_phone"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/single_vehicleDriverPhone"
+                        android:gravity="left|center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        android:id="@+id/single_riskTips"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="任务名称："
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/risk"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@id/single_riskTips"
+                        android:background="@null"
+                        android:gravity="left|center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="5dp"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/black" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        android:id="@+id/single_dispatch_time"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="出车时间："
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/control"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@id/single_dispatch_time"
+                        android:gravity="left|center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="5dp"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        android:id="@+id/single_collecting_time"
+                        android:layout_width="80dp"
+                        android:layout_height="30dp"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="收车时间："
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/time"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+
+                        android:layout_toRightOf="@id/single_collecting_time"
+                        android:gravity="left|center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="5dp"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        android:id="@+id/single_actual_time"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="实际出车时间："
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/chargerTime"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/single_actual_time"
+                        android:background="@null"
+                        android:gravity="left|center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="5dp"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        android:id="@+id/single_actual_time_collect"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="实际收车时间："
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/partner_time"
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/single_actual_time_collect"
+                        android:gravity="left|center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="5dp"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp">
+
+                    <TextView
+                        android:id="@+id/single_Route"
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="false"
+                        android:layout_marginLeft="15dp"
+                        android:gravity="left|center"
+                        android:text="行车路线："
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/Route"
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="7dp"
+                        android:layout_marginRight="20dp"
+                        android:layout_toRightOf="@+id/single_Route"
+                        android:gravity="left|center"
+                        android:paddingLeft="8dp"
+                        android:paddingRight="8dp"
+                        android:paddingTop="5dp"
+                        android:scrollbars="vertical"
+                        android:textColor="@color/black"
+                        android:textSize="14sp" />
+
+                    <ImageView
+                        android:id="@+id/iv_daohang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/Route"
+                        android:src="@drawable/daohang" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:id="@+id/rl_anniu"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/ll_xiangqinga"
+                android:layout_marginTop="50dp">
+
+                <Button
+                    android:id="@+id/button_single_start"
+                    android:layout_width="90dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="45dp"
+                    android:background="@color/blue1"
+                    android:text="出车"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+                <Button
+                    android:id="@+id/button_single_end"
+                    android:layout_width="90dp"
+                    android:layout_height="55dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_toRightOf="@+id/button_single_start"
+                    android:background="@color/blue1"
+                    android:text="收车"
+                    android:textColor="@color/white"
+                    android:textSize="15dp" />
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

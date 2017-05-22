@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:orientation="vertical"
+        android:background="@drawable/ems_ic_preference_single_normal"
+        android:padding="8dp">
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp">
+
+        <TextView
+                android:id="@+id/tv_checked_point_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="受检点："
+                android:textColor="@color/gray"
+                android:textSize="15sp"/>
+
+        <TextView
+                android:id="@+id/tv_checked_point"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_checked_point_tips"
+                android:paddingBottom="8dp"
+                android:paddingRight="8dp"
+                android:textColor="@color/gray"
+                android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+        <TextView
+                android:id="@+id/tv_issues_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="主要问题："
+                android:textColor="@color/gray"
+                android:textSize="15sp"/>
+
+        <TextView
+                android:id="@+id/tv_issues"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_issues_tips"
+                android:paddingBottom="8dp"
+                android:paddingRight="8dp"
+                android:textColor="@color/gray"
+                android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+        <TextView
+                android:id="@+id/tv_suggestion_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="建议与意见："
+                android:textColor="@color/gray"
+                android:textSize="15sp"/>
+
+        <TextView
+                android:id="@+id/tv_suggestion"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_suggestion_tips"
+                android:paddingBottom="8dp"
+                android:paddingRight="20dp"
+                android:textColor="@color/gray"
+                android:textSize="15sp"/>
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+        <TextView
+                android:id="@+id/tv_time_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="填写时间："
+                android:textColor="@color/gray"
+                android:textSize="15sp"/>
+
+        <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_time_tips"
+                android:paddingBottom="8dp"
+                android:paddingRight="8dp"
+                android:textColor="@color/gray"
+                android:textSize="15sp"/>
+    </RelativeLayout>
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp">
+
+        <TextView
+                android:id="@+id/tv_upload_status_tips"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="上传状态："
+                android:textColor="@color/gray"
+                android:textSize="15sp"/>
+
+        <TextView
+                android:id="@+id/tv_upload_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/tv_upload_status_tips"
+                android:paddingBottom="8dp"
+                android:paddingRight="8dp"
+                android:textColor="@color/gray"
+                android:textSize="15sp"/>
+    </RelativeLayout>
+
+</LinearLayout>

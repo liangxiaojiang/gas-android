@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\listview_line.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-xxhdpi\\listview_line.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\hseinspection.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-xxhdpi\\hseinspection.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\ic_launcher.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-xxhdpi-v4\\iconfont_notice.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable-xxhdpi\\iconfont_notice.png"
+    }
+]

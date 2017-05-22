@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="android-pdfview-lib-for-eclipse">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/app/libs/android-pdfview-lib-for-eclipse.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

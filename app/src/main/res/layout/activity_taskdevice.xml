@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+    <RelativeLayout
+            android:id="@+id/rl1"
+            android:layout_width="fill_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/title">
+
+        <ImageView
+                android:id="@+id/checkitem_btn_back"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:clickable="true"
+                android:contentDescription="@null"
+                android:paddingLeft="10dp"
+                android:paddingRight="18dp"
+                android:src="@drawable/selector_btn_back"/>
+
+        <TextView
+                android:id="@+id/checkitem_title_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:text="作业记录"
+                android:textColor="@android:color/white"
+                android:textSize="16sp"/>
+
+        <TextView
+                android:id="@+id/checkitem_btn_finish"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:background="@drawable/selector_btn_blue"
+                android:clickable="true"
+                android:gravity="center"
+                android:paddingLeft="24dp"
+                android:paddingRight="18dp"
+                android:text="读卡"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:visibility="gone"/>
+    </RelativeLayout>
+
+    <ListView
+            android:divider="@null"
+            android:id="@+id/checkitem_listview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rl1"/>
+
+    <TextView
+            android:id="@+id/tv_notice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="36dp"
+            android:background="@color/black"
+            android:paddingBottom="6dp"
+            android:paddingLeft="12dp"
+            android:paddingRight="12dp"
+            android:paddingTop="6dp"
+            android:text="正在计算起停项数据"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:visibility="gone"/>
+
+</RelativeLayout>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:visible="true"
+    android:shape="rectangle">
+    <!-- 设置角的属性 -->
+    <corners android:radius="10dp"/>
+    <!-- 面的渐变色 -->
+    <gradient />
+    <!-- 面的纯色 -->
+    <solid android:color="@color/blue1"/>
+    <!-- 边的属性 -->
+    <!--<stroke android:width="2dp"-->
+            <!--android:color="@color/yellow"/>-->
+</shape>

@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EBEBEB"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="42dp"
+        android:background="#EBEBEB"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="45dp">
+
+            <ImageView
+                android:id="@+id/navbar_back"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/navbar_back" />
+
+            <com.joe.oil.util.ClearEditText
+                android:id="@+id/keyValue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_box"
+                android:layout_marginLeft="45dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="80dp"
+                android:focusable="true"
+                android:focusableInTouchMode="true"
+                android:textColor="#BEBEBE"
+                android:hint="请输入POI关键字"
+                android:textSize="12sp"
+                android:singleLine="true"/>
+
+                <Button
+                    android:id="@+id/btn_search"
+                    android:text="查询"
+                    android:textColor="@color/white"
+                    android:textSize="14sp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginTop="6dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="64dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/btn_shape"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ListView android:id="@+id/lst_poi"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:divider="@drawable/splitor"
+        android:layout_margin="5dp"/>
+
+    <RadioGroup
+        android:id="@+id/poi_rg"
+        android:visibility="invisible"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#ffffff"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/rb_hospital"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:checked="false"
+            android:drawableTop="@drawable/frag_nearby_rbimg"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#BEBEBE"
+            android:text="医院"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rb_hotel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/frag_nearby_rbimg2"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#BEBEBE"
+            android:text="酒店"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rb_wc"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/frag_nearby_rbimg3"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#BEBEBE"
+            android:text="厕所"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rb_shop"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/frag_nearby_rbimg4"
+            android:gravity="center"
+            android:padding="5dp"
+            android:textColor="#BEBEBE"
+            android:text="超市"
+            android:textSize="10sp" />
+
+        <RadioButton
+            android:id="@+id/rb_gas"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:button="@null"
+            android:drawableTop="@drawable/frag_nearby_rbimg5"
+            android:gravity="center"
+            android:textColor="#BEBEBE"
+            android:padding="5dp"
+            android:text="加油站"
+            android:textSize="10sp" />
+    </RadioGroup>
+
+
+
+</LinearLayout>

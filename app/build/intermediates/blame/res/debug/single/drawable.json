@@ -1,0 +1,230 @@
+[
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\indicator_arrow.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\indicator_arrow.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_edittext_focused.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\bg_edittext_focused.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\drawable_197.jpg",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\drawable_197.jpg"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_sign_bg_unable.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\btn_sign_bg_unable.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_complete.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_btn_complete.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_gps.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_btn_gps.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_start.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_start.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\drawable_192.jpg",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\drawable_192.jpg"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_calendar_last.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\bt_calendar_last.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_edittext_normal.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\bg_edittext_normal.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_gas_station.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_btn_gas_station.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\drawable_198.jpg",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\drawable_198.jpg"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\drawable_200.jpg",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\drawable_200.jpg"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_back.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_btn_back.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_edittext_uninputable.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\bg_edittext_uninputable.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_login.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_btn_login.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_finish.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_btn_finish.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\room_rating_bar.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\room_rating_bar.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_take_photo_2.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_btn_take_photo_2.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ban_xing.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\ban_xing.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\corners_bg.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\corners_bg.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_read_card.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_btn_read_card.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_add_pic.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_btn_add_pic.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_edittext.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\bg_edittext.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bg_sign_today.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\bg_sign_today.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_item_set_bg2.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_item_set_bg2.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_download.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_btn_download.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_working.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_btn_working.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_item_set_bg.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_item_set_bg.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_upload.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_btn_upload.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pictures_select_icon2.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\pictures_select_icon2.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_ip_setting.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_btn_ip_setting.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_sign_bg_enable.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\btn_sign_bg_enable.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\drawable_194.jpg",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\drawable_194.jpg"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_blue.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_btn_blue.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\rotate.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\rotate.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_slidemenu.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_slidemenu.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\drawable_193.jpg",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\drawable_193.jpg"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\sign_dialog_day_bg.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\sign_dialog_day_bg.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_take_photo_cancel.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_btn_take_photo_cancel.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_upload_excpetion.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_btn_upload_excpetion.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_bgd.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\bt_bgd.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\full_xing.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\full_xing.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_start.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_btn_start.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\pictures_select_icon.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\pictures_select_icon.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\button_gray.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\button_gray.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_nobgd.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\bt_nobgd.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\p_button_bg_on.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\p_button_bg_on.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_exit_system.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_btn_exit_system.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\drawable_177.jpg",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\drawable_177.jpg"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\btn_sign_bg_selector.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\btn_sign_bg_selector.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\indicate_rotate.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\indicate_rotate.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\selector_btn_single_well.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\selector_btn_single_well.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\empty_xing.png",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\empty_xing.png"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\drawable_196.jpg",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\drawable_196.jpg"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\chk_agee_provision_background.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\chk_agee_provision_background.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\bt_calendar_next.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\drawable\\bt_calendar_next.xml"
+    }
+]

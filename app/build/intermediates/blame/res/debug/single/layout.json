@@ -1,0 +1,558 @@
+[
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\commentlistview_footer.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\commentlistview_footer.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_station.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_station.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_filelayout.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_filelayout.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_station.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_station.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_show.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_show.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_operation_display.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_operation_display.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_line.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_line.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\route_layout.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\route_layout.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_ip_setting.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_ip_setting.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\gridview_item.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\gridview_item.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_choose_plan.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_choose_plan.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_task_detail.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_task_detail.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_settings.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_settings.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_pager_pic.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_pager_pic.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_exception_history_detail.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_exception_history_detail.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_choose_plan.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_choose_plan.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_checkitem.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_checkitem.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_gis_upload_history.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_gis_upload_history.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_upload_exception.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_upload_exception.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_route.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\list_item_route.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_evaluation.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_evaluation.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_hse_history.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_hse_history.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\combin.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\combin.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_choose.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_choose.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\slidemenu_dialog.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\slidemenu_dialog.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_upload.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_upload.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_gis_time_setting.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_gis_time_setting.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_task_fill_detail.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_task_fill_detail.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\top_bar.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\top_bar.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bottombar.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\bottombar.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_sign.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_sign.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gis.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_gis.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_taskdevice.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_taskdevice.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_inspection.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_inspection.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_scanner.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_scanner.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_read_success.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_read_success.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_check_type_choose.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_check_type_choose.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_data_access.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_data_access.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_pic_detail.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_pic_detail.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\poi_search.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\poi_search.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_check_type_input.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_check_type_input.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gis_upload.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_gis_upload.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\device_discovery_separator.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\device_discovery_separator.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_deviceinfo.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_deviceinfo.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_history.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_history.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_inspection.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\view_inspection.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\commentlistview_header.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\commentlistview_header.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_message_list.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_message_list.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\listview_item_one.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\listview_item_one.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_message_detail.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_message_detail.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_task.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_task.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_login.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_checkitem.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_checkitem.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\list_item.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_pic_select_ensure.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_pic_select_ensure.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_task_confirm.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_task_confirm.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_exception.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_exception.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_exception_history.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_exception_history.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\include_listview.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\include_listview.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_clean_plan.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_clean_plan.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\image_detail_fragment.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\image_detail_fragment.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_line.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_line.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_gis_finish.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_gis_finish.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_other_download.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_other_download.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_take_photo.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_take_photo.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_exception_preview.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_exception_preview.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_message_list.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_message_list.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_already.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\view_already.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_feedback.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_feedback.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_imagelist.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_imagelist.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_personal.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_personal.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_feedback.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_feedback.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\footprint_activity.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\footprint_activity.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gis_history.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_gis_history.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pop_view.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\pop_view.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_single.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_single.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_spinner_dropdown.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_spinner_dropdown.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_gas_exception_handle.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_gas_exception_handle.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_download.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_download.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_gis_exception_preview.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_gis_exception_preview.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_single.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_single.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\demo.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\demo.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_fivesteps.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_fivesteps.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_poi_layout.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\list_item_poi_layout.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_read_rf.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_read_rf.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_details_task.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_details_task.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_pdfview.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_pdfview.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_line.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_line.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_image.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_image.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_gis_histroy.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_gis_histroy.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_choose_office.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_choose_office.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\image_detail_pager.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\image_detail_pager.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_check_out_photo.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_check_out_photo.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\device_discovery_item.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\device_discovery_item.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_exception_history.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_exception_history.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_task_finish.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_task_finish.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\popwin_button.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\popwin_button.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_task_finish.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_task_finish.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_operation.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_operation.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\popwindow_menu.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\popwindow_menu.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_job_preview.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_job_preview.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_hse_supervision.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_hse_supervision.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_hse_preview.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_hse_preview.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_task_finish.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_task_finish.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\layout_menu.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\layout_menu.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gis_upload_history_detail.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_gis_upload_history_detail.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_read_card.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_read_card.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_txtread.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_txtread.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_confirm_upload.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_confirm_upload.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\combin_item_button.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\combin_item_button.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_hse_history.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_hse_history.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_inspection.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_inspection.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gis_inspection.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_gis_inspection.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\pull_head.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\pull_head.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_not.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\view_not.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_task.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_task.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\progress.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\progress.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_setting.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_setting.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\scanner_item.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\scanner_item.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gis_upload_history.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_gis_upload_history.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_message_pic.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_message_pic.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\view_exception.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\view_exception.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\bottom.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\bottom.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_maptap.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_maptap.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_login2.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_login2.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_autonomous.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_autonomous.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_current_inspection.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_current_inspection.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_single_details.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_single_details.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_spinner.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_spinner.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\item_take_photo.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\item_take_photo.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_gis_exception_inspection.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_gis_exception_inspection.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_navigation.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_navigation.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_routedirs_layout.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\list_item_routedirs_layout.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\dialog_divice_id_setting.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\dialog_divice_id_setting.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\list_item_layout.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\list_item_layout.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_setting.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\activity_setting.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\reader_discovery_activity.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\reader_discovery_activity.xml"
+    },
+    {
+        "merged": "D:\\gas-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\listview_item_two.xml",
+        "source": "D:\\gas-android\\app\\src\\main\\res\\layout\\listview_item_two.xml"
+    }
+]
